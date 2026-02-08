@@ -24,9 +24,11 @@ const ChannelsSection: React.FC = () => {
             <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-8 text-brand-black"><Mic size={30}/></div>
             <h3 className="text-3xl font-serif font-bold mb-4 text-brand-black">La Profundidad</h3>
             <p className="text-lg text-brand-black/70 mb-8 leading-relaxed ">
+DianaTinforma            </p>
+            <p className="text-lg text-brand-black/70 mb-8 leading-relaxed ">
               Conversaciones con profesionales para comprender la enfermedad con rigor científico y perspectiva humana.
             </p>
-            <a href="#" target="_blank" rel="noreferrer" className="font-bold link-style inline-flex items-center gap-2 text-brand-black">Ver en YouTube <Play size={18}/></a>
+            <a href="#" target="_blank" rel="noreferrer" className="font-bold link-style inline-flex items-center gap-2 text-brand-black">Escuchar podcast<Play size={18}/></a>
           </article>
 
           <article className="bg-white p-12 rounded-editoral manual-border editorial-shadow hover:-translate-y-2 transition-transform">

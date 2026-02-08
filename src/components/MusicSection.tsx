@@ -1,5 +1,5 @@
 import React from 'react';
-import { Music, Play, Headphones } from 'lucide-react';
+import { Music, Play, Droplet, Zap, Feather } from 'lucide-react';
 
 const MusicSection: React.FC = () => {
   const playlists = [
@@ -7,19 +7,25 @@ const MusicSection: React.FC = () => {
       title: "Lloradita y a seguir", 
       desc: "Para esos días en los que necesitas soltarlo todo. Desahogo emocional.",
       color: "bg-soft-lilac",
-      url: "http://googleusercontent.com/spotify.com/7" 
+      url: "http://googleusercontent.com/spotify.com/7",
+      // Icono: Una gota (lágrima)
+      icon: <Droplet className="text-brand-black w-10 h-10" />
     },
     { 
       title: "Energía Vital", 
       desc: "Para cuando te levantas con fuerza o necesitas un empujón para mover el cuerpo.",
       color: "bg-primary",
-      url: "http://googleusercontent.com/spotify.com/8"
+      url: "http://googleusercontent.com/spotify.com/8",
+      // Icono: Un rayo (energía)
+      icon: <Zap className="text-brand-black w-10 h-10" />
     },
     { 
       title: "Calma en el Caos", 
       desc: "Meditación, frecuencias y sonidos suaves para bajar las revoluciones.",
       color: "bg-white",
-      url: "http://googleusercontent.com/spotify.com/9"
+      url: "http://googleusercontent.com/spotify.com/9",
+      // Icono: Una pluma (ligereza/calma)
+      icon: <Feather className="text-brand-black w-10 h-10" />
     }
   ];
 
@@ -57,7 +63,8 @@ const MusicSection: React.FC = () => {
                 {/* Parte Superior: Icono y Textos */}
                 <div>
                   <div className="mb-8">
-                    <Headphones className="text-brand-black w-10 h-10" />
+                    {/* AQUI RENDERIZAMOS EL ICONO ESPECÍFICO DE CADA PLAYLIST */}
+                    {list.icon}
                   </div>
                   <h3 className="text-4xl font-serif font-bold text-brand-black mb-4 leading-tight">{list.title}</h3>
                   <p className="text-brand-black/70 font-medium leading-relaxed">{list.desc}</p>

@@ -5,13 +5,14 @@ import '../index.css';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import TravesiaSection from '../components/TravesiaSection';
-import ChannelsSection from '../components/ChannelsSection'; // Ahora solo tiene redes y cartas
+import ChannelsSection from '../components/ChannelsSection'; 
 import ManualQuote from '../components/ManualQuote';
 import AgendaSection from '../components/AgendaSection'; // dianaTinforma
-import MusicSection from '../components/MusicSection';   // <--- NUEVO: dianaTbaila
+import MusicSection from '../components/MusicSection';   // dianaTbaila
 import ChatExperience from '../components/ChatExperience';
 import Contact from '../components/Contact'; // dianaTescucha
 import Footer from '../components/Footer';
+import AboutProject from '../components/AboutProject'; // <--- IMPORTAR
 
 const App: React.FC = () => {
   return (
@@ -19,13 +20,14 @@ const App: React.FC = () => {
       <Header />
       <main>
         <Hero />
+        <AboutProject />
         <TravesiaSection />
         <ChannelsSection />
         <ManualQuote />
         
         {/* Bloque de Información y Recursos */}
-        <AgendaSection /> 
-        <MusicSection />  {/* Aquí está dianaTbaila debajo de dianaTinforma */}
+        {/* <AgendaSection />  */}
+        <MusicSection />  
         
         <ChatExperience />
         <Contact />

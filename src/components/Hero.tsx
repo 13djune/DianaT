@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
           "Cuando la enfermedad te golpea y te pierdes en el viaje."
         </h1>
         <p className="text-2xl md:text-3xl text-brand-black/80 font-sans italic mb-12 max-w-3xl mx-auto leading-relaxed">
-          Te acompañamos en la travesía, aportando orden y criterio frente al caos.
+        Te acompañamos en la travesía por el cáncer de mama.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-6">
           {/* <button className="bg-brand-black text-white px-12 py-5 rounded-full text-xl font-bold shadow-lg hover:bg-primary hover:text-brand-black transition-all active:scale-95">

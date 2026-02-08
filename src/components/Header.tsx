@@ -24,10 +24,10 @@ const Header: React.FC = () => {
           
           {/* MENÚ DE ESCRITORIO */}
           <nav className="hidden md:flex items-center space-x-12" aria-label="Menú principal">
-            {/* Usamos <a> estándar pero con la ruta inteligente */}
+            <a href={getLink("#proyecto")} className="text-brand-black font-semibold link-style cursor-pointer">El Proyecto</a>
             <a href={getLink("#travesia")} className="text-brand-black font-semibold link-style cursor-pointer">La Travesía</a>
             <a href={getLink("#canales")} className="text-brand-black font-semibold link-style cursor-pointer">Canales</a>
-            <a href={getLink("#agenda")} className="text-brand-black font-semibold link-style cursor-pointer">Agenda</a>
+            {/* <a href={getLink("#agenda")} className="text-brand-black font-semibold link-style cursor-pointer">Agenda</a> */}
             <a href={getLink("#contacto")} className="bg-brand-black text-white px-8 py-3 rounded-full font-bold hover:bg-primary hover:text-brand-black transition-all">Contacto</a>
           </nav>
 
@@ -41,9 +41,10 @@ const Header: React.FC = () => {
       {/* MENÚ MÓVIL DESPLEGABLE */}
       {isOpen && (
         <nav className="md:hidden bg-white border-b border-brand-black/10 px-6 py-10 space-y-8 flex flex-col items-center shadow-2xl animate-in slide-in-from-top-5">
+            <a href={getLink("#proyecto")} onClick={() => setIsOpen(false)} className="text-3xl font-serif font-bold text-brand-black">El Proyecto</a>
           <a href={getLink("#travesia")} onClick={() => setIsOpen(false)} className="text-3xl font-serif font-bold text-brand-black">La Travesía</a>
           <a href={getLink("#canales")} onClick={() => setIsOpen(false)} className="text-3xl font-serif font-bold text-brand-black">Canales</a>
-          <a href={getLink("#agenda")} onClick={() => setIsOpen(false)} className="text-3xl font-serif font-bold text-brand-black">Agenda</a>
+          {/* <a href={getLink("#agenda")} onClick={() => setIsOpen(false)} className="text-3xl font-serif font-bold text-brand-black">Agenda</a> */}
           <a href={getLink("#contacto")} onClick={() => setIsOpen(false)} className="w-full text-center bg-primary text-brand-black py-5 rounded-full font-bold text-xl">Contacto</a>
         </nav>
       )}

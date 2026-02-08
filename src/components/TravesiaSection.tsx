@@ -1,14 +1,12 @@
 import React from 'react';
-import { Compass, Activity, Zap, ShieldCheck, Star, Anchor } from 'lucide-react';
+import { Compass, Activity, Star, CalendarCheck } from 'lucide-react';
 
 const TravesiaSection: React.FC = () => {
   const etapas = [
     { title: "Diagnóstico", desc: "El impacto, las pruebas y la búsqueda de claridad.", icon: <Compass className="w-6 h-6" /> },
-    { title: "Tratamiento", desc: "Diseñando la hoja de ruta médica personalizada.", icon: <Activity className="w-6 h-6" /> },
-    { title: "Quimio", desc: "Navegando por los ciclos con humor y con amor.", icon: <Zap className="w-6 h-6" /> },
-    { title: "Cirugía", desc: "El puerto de la intervención y la sanación física.", icon: <ShieldCheck className="w-6 h-6" /> },
-    { title: "Recuperación", desc: "Reconstruyendo el cuerpo y el ánimo.", icon: <Star className="w-6 h-6" /> },
-    { title: "Seguimiento", desc: "Vivir con conciencia plena y nuevos horizontes.", icon: <Anchor className="w-6 h-6" /> }
+    { title: "Tratamiento", desc: "La hoja de ruta personalizada.", icon: <Activity className="w-6 h-6" /> },
+    { title: "Recuperación", desc: "Reconstruyendo el cuerpo y la mente.", icon: <Star className="w-6 h-6" /> },
+    { title: "Seguimiento", desc: "Vivir con conciencia plena y nuevos horizontes.", icon: <CalendarCheck className="w-6 h-6" /> }
   ];
 
   return (
@@ -24,7 +22,7 @@ const TravesiaSection: React.FC = () => {
         <div className="relative">
           <div className="hidden lg:block absolute top-[40px] left-[5%] right-[5%] h-0.5 bg-brand-black/10" />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
             {etapas.map((etapa, idx) => (
               <div key={idx} className="flex flex-col items-center text-center group">
                 <div className="w-20 h-20 bg-white rounded-full manual-border flex items-center justify-center mb-6 group-hover:bg-primary transition-all duration-500 transform group-hover:-translate-y-2 shadow-sm text-brand-black">
