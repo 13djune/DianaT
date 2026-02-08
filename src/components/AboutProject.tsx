@@ -30,7 +30,7 @@ const AboutProject: React.FC = () => {
             <Heart className="text-brand-black" size={24} />
           </div>
           <h2 className="text-5xl font-serif font-bold mb-4 text-brand-black italic">El Proyecto</h2>
-          <p className="text-brand-black/60 font-medium uppercase tracking-widest text-sm">Historia, Misión y Equipo</p>
+          <p className="text-brand-black/60 font-medium uppercase tracking-widest text-sm">Historia, Propósito y Equipo</p>
         </div>
 
         {/* PARTE 1: CARTA DE MERCEDES (Historia Personal) */}
@@ -71,7 +71,7 @@ const AboutProject: React.FC = () => {
             </p>
             <p className="text-lg text-brand-black/80 leading-relaxed">
               Pretendemos acompañar a mujeres con cáncer de mama a través de información clara, experiencia real y comunidad, 
-              para ayudar a entender cada fase del proceso, reducir el miedo y no sentirse solas en el camino.
+              para ayudar a entender cada fase del proceso, reducir el miedo y el sentimiento de soledad.
             </p>
             <p className="text-xl font-bold text-brand-black font-serif italic pt-4">
               Queremos construir un ecosistema de contenido fiable, humano y diferenciado que se convierta en un referente 

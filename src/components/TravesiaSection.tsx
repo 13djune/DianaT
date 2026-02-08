@@ -13,10 +13,8 @@ const TravesiaSection: React.FC = () => {
     <section id="travesia" className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-6xl font-serif font-bold mb-6 italic text-brand-black">Los Puertos del Viaje</h2>
-          <p className="text-xl text-brand-black/70 max-w-2xl mx-auto leading-relaxed">
-            Un ecosistema de contenido fiable para dar estructura a lo que parece no tenerla.
-          </p>
+          <h2 className="text-4xl md:text-6xl font-serif font-bold mb-6 italic text-brand-black">Las etapas del camino</h2>
+      
         </div>
         
         <div className="relative">
