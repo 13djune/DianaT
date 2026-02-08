@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* --- 1. CONFIGURACIÓN DEL TEMA (Tailwind v4) --- */
+@theme {
+    --color-primary: #FEAEC9;
+    --color-soft-lilac: #F3E0FE; /* Este es el color de fondo que fallaba */
+    --color-lavender: #C6C0E6;
+    --color-brand-black: #000100;
+  /* Tipografías */
+  --font-sans: "IBM Plex Sans", "Inter", ui-sans-serif, system-ui;
+  --font-serif: "Perfectly-Nineties", "Playfair Display", ui-serif, Georgia;
+
+  --radius-editoral: 24px;       /* Radio de tarjetas editorial */
+}
+
+/* --- 2. FUENTE PERSONALIZADA --- */
+@font-face {
+  font-family: 'Perfectly-Nineties';
+  src: url('/src/assets/fonts/perfectly-nineties-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- 3. ESTILOS BASE --- */
+@layer base {
+  body {
+    @apply bg-white text-brand-black antialiased selection:bg-primary/40 selection:text-brand-black;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    line-height: 1.8;
+  }
+
+  /* Forzamos la tipografía Serif en los encabezados */
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif) !important;
+  }
+
+  /* Accesibilidad AAA: Foco visible */
+  :focus-visible {
+    outline: 4px solid var(--color-primary);
+    outline-offset: 4px;
+  }
+}
+
+/* --- 4. COMPONENTES NEOBRUTALISTAS --- */
+@layer components {
+  /* El borde negro icónico */
+  .manual-border {
+    border: 2px solid #000100;
+  }
+
+  /* Sombra suave estilo "Paper" */
+  .editorial-shadow {
+    box-shadow: 0 4px 20px -5px rgba(0, 1, 0, 0.05);
+  }
+
+  /* Enlaces con subrayado animado DianaT */
+  .link-style {
+    @apply underline decoration-1 underline-offset-[6px] transition-all duration-300;
+    text-decoration-color: inherit;
+  }
+
+  .link-style:hover {
+    @apply decoration-[3px] decoration-primary;
+  }
+
+  /* Estilo para los inputs del formulario y chat */
+  input::placeholder, textarea::placeholder {
+    @apply text-brand-black/30 italic;
+  }
+}
+
+/* --- 5. ANIMACIONES (Para el Hero y Chat) --- */
+@layer utilities {
+  /* Animación de entrada suave */
+  .animate-in {
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+  }
+
+  .fade-in {
+    animation-name: fadeIn;
+  }
+
+  .slide-in-from-bottom-4 {
+    animation-name: slideInBottom;
+  }
+
+  .zoom-in-95 {
+    animation-name: zoomIn;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideInBottom {
+    from { transform: translateY(1rem); }
+    to { transform: translateY(0); }
+  }
+
+  @keyframes zoomIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  /* Efecto Glitch sutil para el texto del chat */
+  .group-hover\:animate-glitch:hover {
+    @apply skew-x-2 transition-transform duration-75;
+  }
+}
+
+/* --- 6. FIX PARA SELECTORES Y QUOTES --- */
+/* Estilo del selector del formulario para que no use el del sistema */
+select {
+  background-image: none;
+}
+
+/* Ajuste para las comillas gigantes de la sección Quote */
+.text-9xl {
+  line-height: 0;
+  pointer-events: none;
+}
