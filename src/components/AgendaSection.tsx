@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importante para la navegación interna
+import { Link } from 'react-router-dom';
 import { Stethoscope, ArrowRight, Plus } from 'lucide-react';
 
 const AgendaSection: React.FC = () => {
-  // Estos datos simulan tu "base de datos" de noticias
   const items = [
     { 
-      id: "protocolos-radioterapia", // ID para la URL
+      id: "protocolos-radioterapia", 
       title: "Nuevos protocolos en radioterapia", 
       type: "Noticia", 
       date: "Hoy" 
@@ -25,14 +24,19 @@ const AgendaSection: React.FC = () => {
     }
   ];
 
+  // Función auxiliar para subir arriba
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <section id="agenda" className="py-32 bg-white border-t border-brand-black/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           
-          {/* COLUMNA IZQUIERDA: Intro y Detalle */}
+          {/* COLUMNA IZQUIERDA */}
           <div>
-            <h2 className="text-5xl font-serif font-bold mb-8 italic text-brand-black">DianaTinforma</h2>
+            <h2 className="text-5xl md:text-7xl font-serif font-bold mb-8 italic text-brand-black">DianaTinforma</h2>
             <p className="text-xl text-brand-black/70 leading-relaxed mb-10">
               Agenda y actualidad. Un filtro de rigor para que tengas el criterio necesario en cada puerto, sin ruido ni bulos.
             </p>
@@ -50,13 +54,14 @@ const AgendaSection: React.FC = () => {
             </div>
           </div>
 
-          {/* COLUMNA DERECHA: Lista de noticias */}
+          {/* COLUMNA DERECHA */}
           <div className="flex flex-col h-full justify-between">
             <div className="space-y-6">
               {items.map((item) => (
                 <Link 
                   key={item.id} 
-                  to={`/noticia/${item.id}`} // Navegación a la página de detalle
+                  to={`/noticia/${item.id}`}
+                  onClick={scrollToTop} // <--- AQUI ESTÁ LA MAGIA
                   className="block p-8 manual-border rounded-editoral hover:bg-soft-lilac/30 transition-all group bg-white relative top-0 hover:-top-1"
                 >
                   <div className="flex items-center justify-between">
@@ -78,7 +83,8 @@ const AgendaSection: React.FC = () => {
             {/* Botón VER MÁS */}
             <div className="mt-8 text-right">
               <Link 
-                to="/noticias" // Navegación a la página de listado completo
+                to="/noticias"
+                onClick={scrollToTop} // <--- AQUI TAMBIÉN
                 className="inline-flex items-center gap-2 text-brand-black font-bold uppercase tracking-widest text-sm hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-1"
               >
                 <Plus size={16} />
