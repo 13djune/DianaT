@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <section className="pt-48 pb-32 bg-soft-lilac relative overflow-hidden">
       <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
-        <h1 className="text-5xl md:text-8xl font-serif font-bold leading-[1.1] mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000 text-brand-black">
+        <h1 className="text-5xl md:text-8xl font-serif  leading-[1.1] mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000 text-brand-black">
           "Cuando la enfermedad te golpea y te pierdes en el viaje."
         </h1>
         <p className="text-2xl md:text-3xl text-brand-black/80 font-sans italic mb-12 max-w-3xl mx-auto leading-relaxed">

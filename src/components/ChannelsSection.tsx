@@ -14,6 +14,8 @@ const ChannelsSection: React.FC = () => {
           <article className="bg-white p-12 rounded-editoral manual-border editorial-shadow hover:-translate-y-2 transition-transform">
             <div className="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center mb-8 text-brand-black"><Instagram size={30}/></div>
             <h3 className="text-3xl font-serif font-bold mb-4 text-brand-black">El Pulso</h3>
+            <p className=" font-serif text-lg text-brand-black/70 mb-8 leading-relaxed ">
+            DianaTinspira            </p>
             <p className="text-lg text-brand-black/70 mb-8 leading-relaxed">
               Inspiración diaria y conexión emocional. El espacio donde el proyecto respira y conversa contigo cada día.
             </p>
@@ -23,7 +25,7 @@ const ChannelsSection: React.FC = () => {
           <article className="bg-lavender p-12 rounded-editoral manual-border editorial-shadow hover:-translate-y-2 transition-transform">
             <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-8 text-brand-black"><Mic size={30}/></div>
             <h3 className="text-3xl font-serif font-bold mb-4 text-brand-black">La Profundidad</h3>
-            <p className="text-lg text-brand-black/70 mb-8 leading-relaxed ">
+            <p className=" font-serif text-lg text-brand-black/70 mb-8 leading-relaxed ">
 DianaTinforma            </p>
             <p className="text-lg text-brand-black/70 mb-8 leading-relaxed ">
               Conversaciones con profesionales para comprender la enfermedad con rigor científico y perspectiva humana.
@@ -34,6 +36,8 @@ DianaTinforma            </p>
           <article className="bg-white p-12 rounded-editoral manual-border editorial-shadow hover:-translate-y-2 transition-transform">
             <div className="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center mb-8 text-brand-black"><Mail size={30}/></div>
             <h3 className="text-3xl font-serif font-bold mb-4 text-brand-black">El Núcleo</h3>
+            <p className="font-serif text-lg text-brand-black/70 mb-8 leading-relaxed ">
+            DianaTescribe           </p>
             <p className="text-lg text-brand-black/70 mb-8 leading-relaxed">
               Nuestro espacio más íntimo. Reflexiones exclusivas para profundizar en los temas que más nos importan.
             </p>
@@ -43,7 +47,7 @@ DianaTinforma            </p>
                 placeholder="Tu email..." 
                 className="w-full bg-transparent border-b-2 border-brand-black py-3 outline-none focus:bg-primary/10 transition-all text-lg italic text-brand-black"
               />
-              <button className="w-full bg-brand-black text-white py-4 rounded-full font-bold hover:bg-primary hover:text-brand-black transition-all">DianaTescribe</button>
+              <button className="w-full bg-brand-black text-white py-4 rounded-full font-bold hover:bg-primary hover:text-brand-black transition-all">Suscríbete a la Newsletter</button>
             </form>
           </article>
         </div>

@@ -1,11 +1,11 @@
 import React from 'react';
-import { Heart, Users,  TicketsPlane, HeartHandshake } from 'lucide-react';
+import { Heart, Users,  HandHeart, HeartHandshake } from 'lucide-react';
 
 const AboutProject: React.FC = () => {
   // 1. LA TRIPULACIÓN (FIJOS)
   // He actualizado a Mercedes como fundadora basándome en el texto.
   const coreTeam = [
-    { name: "Mercedes", role: "Diana y Psicóloga", image: null }, 
+    { name: "Mercedes Chacón", role: "Diana y Psicóloga", image: null }, 
     { name: "Dra. Ana López", role: "Asesora Oncológica", image: null },
     { name: "Lucía Pérez", role: "Psicóloga", image: null },
   ];
@@ -29,7 +29,7 @@ const AboutProject: React.FC = () => {
           <div className="inline-flex items-center justify-center p-3 bg-soft-lilac rounded-full mb-6">
             <Heart className="text-brand-black" size={24} />
           </div>
-          <h2 className="text-5xl font-serif font-bold mb-4 text-brand-black italic">El Proyecto DianaT</h2>
+          <h2 className="text-5xl font-serif font-bold mb-4 text-brand-black italic">El Proyecto</h2>
           <p className="text-brand-black/60 font-medium uppercase tracking-widest text-sm">Historia, Misión y Equipo</p>
         </div>
 
@@ -83,10 +83,10 @@ const AboutProject: React.FC = () => {
         {/* SEPARADOR */}
         <div className="h-px w-full bg-brand-black/10 mb-20"></div>
 
-        {/* PARTE 3: LA TRIPULACIÓN (Equipo Fijo) */}
+        {/* PARTE 3: Equipo Fijo */}
         <div className="mb-24">
           <h3 className="text-3xl font-serif font-bold text-center mb-12 flex items-center justify-center gap-3">
-            <Users className="text-primary" /> La Tripulación
+            <Users className="text-primary" /> El Equipo
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -109,7 +109,7 @@ const AboutProject: React.FC = () => {
         {/* PARTE 4: COLABORADORES (Esporádicos) */}
         <div className="text-center">
           <h3 className="text-2xl font-serif font-bold mb-8 flex items-center justify-center gap-2">
-            <TicketsPlane className="text-primary" size={20} /> Compañeros de Viaje
+            <HandHeart className="text-primary" size={20} /> Colaboradores
           </h3>
           <p className="text-brand-black/70 mb-8 italic max-w-2xl mx-auto">
             Gracias a quienes aportan su granito de arena, su ciencia o su arte de manera puntual para que este barco siga navegando.

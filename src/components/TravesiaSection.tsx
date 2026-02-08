@@ -1,11 +1,11 @@
 import React from 'react';
-import { Compass, Activity, Star, CalendarCheck } from 'lucide-react';
+import { Compass, HeartPulse , Sprout, CalendarCheck } from 'lucide-react';
 
 const TravesiaSection: React.FC = () => {
   const etapas = [
     { title: "Diagnóstico", desc: "El impacto, las pruebas y la búsqueda de claridad.", icon: <Compass className="w-6 h-6" /> },
-    { title: "Tratamiento", desc: "La hoja de ruta personalizada.", icon: <Activity className="w-6 h-6" /> },
-    { title: "Recuperación", desc: "Reconstruyendo el cuerpo y la mente.", icon: <Star className="w-6 h-6" /> },
+    { title: "Tratamiento", desc: "La hoja de ruta personalizada.", icon: <HeartPulse className="w-6 h-6" /> },
+    { title: "Recuperación", desc: "Reconstruyendo el cuerpo y la mente.", icon: <Sprout className="w-6 h-6" /> },
     { title: "Seguimiento", desc: "Vivir con conciencia plena y nuevos horizontes.", icon: <CalendarCheck className="w-6 h-6" /> }
   ];
 

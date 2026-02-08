@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
                 <textarea rows={4} className="w-full bg-transparent border-b-2 border-brand-black py-3 outline-none focus:bg-primary/10 text-xl font-serif italic transition-all resize-none text-brand-black" placeholder="Escribe con total libertad..."></textarea>
               </div>
               <button className="w-full bg-brand-black text-white py-6 rounded-full font-bold text-xl hover:bg-primary hover:text-brand-black transition-all shadow-lg">
-                Enviar mensaje con confianza
+                Enviar mensaje
               </button>
             </div>
           </form>
