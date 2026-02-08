@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
           <div>
             <h2 className="text-6xl md:text-7xl font-serif font-bold mb-8 leading-tight italic text-brand-black">DianaTescucha</h2>
             <p className="text-2xl text-brand-black/80 mb-12 italic leading-relaxed">
-              "Escríbenos aunque tengas el alma rota y el corazón partío. Estamos aquí para sostener el viaje contigo."
+              Escríbenos, estamos aquí para acompañarte en el viaje.
             </p>
             <div className="space-y-10">
               <div className="flex items-center gap-6">
