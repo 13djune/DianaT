@@ -12,12 +12,12 @@ const AboutProject: React.FC = () => {
 
   // 2. COLABORADORES (ESPORÁDICOS)
   const collaborators = [
-    { name: "Asociación Caminar", url: "https://www.asociacioncaminar.org" },
-    { name: "Centro de Yoga", url: "https://instagram.com/yogalotus" },
-    { name: "Pedro - Fotógrafo", url: "https://pedrofoto.com" }, 
-    { name: "Elena - Nutrición", url: "https://elenanutri.com" },
-    { name: "Sofía - Diseño", url: "https://behance.net/sofia" },
-    { name: "Dra. Ruiz", url: "https://linkedin.com/in/draruiz" },
+    { name: "Asociación Caminar", url: "" },
+    { name: "Thayri - Diseñadora", url: "" },
+    { name: "Belén - Diseñadora Web", url: "https://www.linkedin.com/in/belen-castillo-chacon" }, 
+    // { name: "Elena - Nutrición", url: "https://elenanutri.com" },
+    // { name: "Sofía - Diseño", url: "https://behance.net/sofia" },
+    // { name: "Dra. Ruiz", url: "https://linkedin.com/in/draruiz" },
   ];
 
   return (
