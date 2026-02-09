@@ -2,7 +2,7 @@ import React from 'react';
 import { Heart, Users,  HandHeart, HeartHandshake } from 'lucide-react';
 
 const AboutProject: React.FC = () => {
-  // 1. LA TRIPULACIÓN (FIJOS)
+  // 1. EL EQUIPO (FIJOS)
   // He actualizado a Mercedes como fundadora basándome en el texto.
   const coreTeam = [
     { name: "Mercedes Chacón", role: "Diana y Psicóloga", image: null }, 
@@ -84,7 +84,7 @@ const AboutProject: React.FC = () => {
         <div className="h-px w-full bg-brand-black/10 mb-20"></div>
 
         {/* PARTE 3: Equipo Fijo */}
-        <div className="mb-24">
+        {/* <div className="mb-24">
           <h3 className="text-3xl font-serif font-bold text-center mb-12 flex items-center justify-center gap-3">
             <Users className="text-primary" /> El Equipo
           </h3>
@@ -104,10 +104,10 @@ const AboutProject: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* PARTE 4: COLABORADORES (Esporádicos) */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <h3 className="text-2xl font-serif font-bold mb-8 flex items-center justify-center gap-2">
             <HandHeart className="text-primary" size={20} /> Colaboradores
           </h3>
@@ -127,7 +127,7 @@ const AboutProject: React.FC = () => {
               </a>
             ))}
           </div>
-        </div>
+        </div> */}
 
       </div>
     </section>

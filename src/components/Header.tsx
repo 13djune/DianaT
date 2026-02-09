@@ -18,8 +18,12 @@ const Header: React.FC = () => {
         <div className="flex justify-between h-24 items-center">
           {/* LOGO: Siempre lleva al inicio usando Link */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full manual-border flex items-center justify-center font-serif text-xl group-hover:bg-primary transition-colors bg-white">D</div>
-            <span className="text-2xl font-serif font-bold tracking-tight text-brand-black">Diana<span className="text-primary">T</span></span>
+          <img 
+    src="/logo.png" 
+    alt="DianaT Logo" 
+    className="h-10 w-auto object-contain" 
+  />
+              <span className="text-2xl font-serif font-bold tracking-tight text-brand-black">Diana<span className="text-primary">T</span></span>
           </Link>
           
           {/* MENÚ DE ESCRITORIO */}
