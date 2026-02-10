@@ -15,14 +15,12 @@ const AboutProject: React.FC = () => {
     { name: "Asociación Caminar", url: "" },
     { name: "Thayri - Diseñadora", url: "" },
     { name: "Belén - Diseñadora Web", url: "https://www.linkedin.com/in/belen-castillo-chacon" }, 
-    // { name: "Elena - Nutrición", url: "https://elenanutri.com" },
-    // { name: "Sofía - Diseño", url: "https://behance.net/sofia" },
-    // { name: "Dra. Ruiz", url: "https://linkedin.com/in/draruiz" },
+
   ];
 
   return (
     <section id="proyecto" className="py-32 bg-white relative overflow-hidden">
-      <div className="max-w-4xl mx-auto px-6 relative z-10">
+      <div className="max-w-4xl mx-auto px-8 relative z-10">
         
         {/* CABECERA */}
         <div className="text-center mb-16">
@@ -81,7 +79,7 @@ const AboutProject: React.FC = () => {
         </div>
 
         {/* SEPARADOR */}
-        <div className="h-px w-full bg-brand-black/10 mb-20"></div>
+        {/* <div className="h-px w-full bg-brand-black/10 mb-20"></div> */}
 
         {/* PARTE 3: Equipo Fijo */}
         {/* <div className="mb-24">

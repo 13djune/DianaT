@@ -12,13 +12,13 @@ const Contact: React.FC = () => {
               Escríbenos, estamos aquí para ayudarte.
             </p>
             <div className="space-y-10">
-              <div className="flex items-center gap-6">
+              {/* <div className="flex items-center gap-6">
                 <div className="p-4 bg-primary rounded-2xl manual-border text-brand-black"><Mail /></div>
                 <div>
                   <p className="text-sm font-bold uppercase tracking-widest text-brand-black/40">Email Directo</p>
                   <a href="mailto:hola@dianat.es" className="text-2xl font-bold link-style text-brand-black">hola@dianat.es</a>
                 </div>
-              </div>
+              </div> */}
               <div className="flex items-center gap-6">
                 <div className="p-4 bg-lavender rounded-2xl manual-border text-brand-black"><Instagram /></div>
                 <div>

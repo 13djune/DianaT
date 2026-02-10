@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         </p>
         <div className="h-px bg-white/10 w-full mb-12" />
         <p className="text-brand-black/60 text-sm tracking-widest uppercase">
-          © {new Date().getFullYear()} DianaT Proyecto — Manual No Oficial del Cáncer de Mama
+          © {new Date().getFullYear()} DianaT Proyecto sin ánimo de lucro — Mi viaje a través del cáncer de mama.
         </p>
       </div>
     </footer>

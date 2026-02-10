@@ -21,6 +21,7 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <AboutProject />
+        <ChatExperience />
         <TravesiaSection />
         <ChannelsSection />
         <ManualQuote />
@@ -29,7 +30,6 @@ const App: React.FC = () => {
         {/* <AgendaSection />  */}
         <MusicSection />  
         
-        <ChatExperience />
         <Contact />
       </main>
       <Footer />

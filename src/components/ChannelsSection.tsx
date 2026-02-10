@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Mic, Mail, ArrowRight, Play } from 'lucide-react';
+import { Instagram, Mic, Mail, ArrowRight, Play, LockKeyhole } from 'lucide-react';
 
 const ChannelsSection: React.FC = () => {
   return (
@@ -30,7 +30,7 @@ DianaTinforma            </p>
             <p className="text-lg text-brand-black/70 mb-8 leading-relaxed ">
               Conversaciones con profesionales para comprender la enfermedad con rigor científico y perspectiva humana.
             </p>
-            <a href="#" target="_blank" rel="noreferrer" className="font-bold link-style inline-flex items-center gap-2 text-brand-black">Escuchar podcast<Play size={18}/></a>
+            <p rel="noreferrer" title="En proceso..." className="font-bold link-style inline-flex items-center gap-2 text-brand-black cursor-not-allowed">Podcast en proceso...<LockKeyhole size={18}/></p>
           </article>
 
           <article className="bg-white p-12 rounded-editoral manual-border editorial-shadow hover:-translate-y-2 transition-transform">
