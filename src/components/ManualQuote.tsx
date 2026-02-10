@@ -23,10 +23,7 @@ const ManualQuote: React.FC = () => {
             <span className="relative z-10">amor</span>
           </span>
 
-          <br className="block mt-4" />
-          aunque tengas el alma
-          <br className="block" />
-          rota y el corazón "partío".
+          aunque tengas el alma rota y el corazón "partío".
         </h2>
         
         <p className="mt-16 text-sm font-bold uppercase tracking-[0.3em] text-brand-black/40">— Mercedes Chacón</p>
