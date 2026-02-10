@@ -7,7 +7,7 @@ const MusicSection: React.FC = () => {
       title: "Lloradita y a seguir", 
       desc: "Para esos días en los que necesitas soltarlo todo. Desahogo emocional.",
       color: "bg-soft-lilac",
-      url: "http://googleusercontent.com/spotify.com/7",
+      url: "https://open.spotify.com/playlist/7bkUmyFFxckxuH4h15bmjm?si=FXhdM84RS7q7c9kUdLAxMA",
       // Icono: Una gota (lágrima)
       icon: <Droplet className="text-brand-black w-10 h-10" />
     },
@@ -15,7 +15,7 @@ const MusicSection: React.FC = () => {
       title: "Energía Vital", 
       desc: "Para cuando te levantas con fuerza o necesitas un empujón para mover el cuerpo.",
       color: "bg-primary",
-      url: "http://googleusercontent.com/spotify.com/8",
+      url: "https://open.spotify.com/playlist/1iDDb5i6imOHOZXjYbZyK6?si=x4mL29_5T6KJG3MHLTb9LA&pi=DrQZPcfPRZm1F",
       // Icono: Un rayo (energía)
       icon: <Zap className="text-brand-black w-10 h-10" />
     },
