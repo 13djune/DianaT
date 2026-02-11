@@ -23,7 +23,7 @@ const MusicSection: React.FC = () => {
       title: "Calma en el Caos", 
       desc: "Meditación, frecuencias y sonidos suaves para bajar las revoluciones.",
       color: "bg-white",
-      url: "http://googleusercontent.com/spotify.com/9",
+      url: "https://open.spotify.com/playlist/6gnA5xQnxPVZ2rl8z1S2To?si=FZWfseeEQauQUUW909gh8w&pi=_oMLJBSSQD2ya",
       // Icono: Una pluma (ligereza/calma)
       icon: <Feather className="text-brand-black w-10 h-10" />
     }
