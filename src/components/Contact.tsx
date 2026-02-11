@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
           <div>
-            <h2 className="text-6xl md:text-7xl font-serif font-bold mb-8 leading-tight italic text-brand-black">DianaTescucha</h2>
+            <h2 className="text-5xl md:text-7xl font-serif font-bold mb-8 leading-tight italic text-brand-black">DianaTescucha</h2>
             <p className="text-2xl text-brand-black/80 mb-12 italic leading-relaxed">
               Escríbenos, estamos aquí para ayudarte.
             </p>
@@ -67,18 +67,17 @@ const Contact: React.FC = () => {
                 </p>
                 <button 
                   onClick={() => setFormStatus('idle')} 
-                  className="text-sm font-bold uppercase tracking-widest border-b border-brand-black pb-1 hover:text-primary transition-colors"
+                  className="text-sm font-bold uppercase tracking-widest border-b border-brand-black pb-1 hover:text-primary transition-colors cursor-pointer"
                 >
                   Enviar otro mensaje
                 </button>
               </div>
             ) : (
-              /* Si no, mostramos el formulario normal */
               <form 
                 name="contacto-dianat" 
                 method="POST" 
                 data-netlify="true" 
-                onSubmit={handleSubmit} // AQUI ESTÁ LA CLAVE
+                onSubmit={handleSubmit} 
               >
                 {/* Input oculto obligatorio */}
                 <input type="hidden" name="form-name" value="contacto-dianat" />

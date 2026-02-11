@@ -6,7 +6,7 @@ const ChannelsSection: React.FC = () => {
     <section id="canales" className="py-32 bg-soft-lilac">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-serif font-bold mb-6 italic text-brand-black">Canales de Valor</h2>
+          <h2 className="text-5xl md:text-7xl font-serif font-bold mb-6 italic text-brand-black">Canales de Valor</h2>
           <p className="text-xl text-brand-black/80">Un lugar donde cada espacio tiene su propósito.</p>
         </div>
         

@@ -40,8 +40,9 @@ const MusicSection: React.FC = () => {
               </div>
               <span className="text-primary font-bold tracking-widest uppercase text-sm">Banda Sonora Oficial</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-serif font-bold italic text-white">DianaTbaila</h2>
-          </div>
+            <h2 className="text-5xl md:text-7xl font-serif font-bold italic text-white text-right md:text-left">
+  DianaTbaila
+</h2>          </div>
           <p className="text-xl text-white/60 max-w-md text-right md:text-left">
             Porque a veces el cuerpo pide movimiento y el alma pide música. Una playlist para cada estado de ánimo.
           </p>

@@ -27,7 +27,7 @@ const AboutProject: React.FC = () => {
           <div className="inline-flex items-center justify-center p-3 bg-soft-lilac rounded-full mb-6">
             <Heart className="text-brand-black" size={24} />
           </div>
-          <h2 className="text-5xl font-serif font-bold mb-4 text-brand-black italic">El Proyecto</h2>
+          <h2 className="text-5xl md:text-7xl  font-serif font-bold mb-4 text-brand-black italic">El Proyecto</h2>
           <p className="text-brand-black/60 font-medium uppercase tracking-widest text-sm">Historia, Propósito y Equipo</p>
         </div>
 
@@ -60,9 +60,12 @@ const AboutProject: React.FC = () => {
 
         {/* PARTE 2: LA MISIÓN */}
         <div className="bg-soft-lilac/40 p-10 md:p-14 rounded-[40px] manual-border editorial-shadow mb-24 relative overflow-hidden">
-          <HeartHandshake className="absolute top-8 left-8 text-primary/40 transform -scale-x-100" size={80} />
+        <HeartHandshake 
+            className="absolute top-4 left-4 md:top-8 md:left-8 text-primary/40 transform -scale-x-100 w-16 h-16 md:w-20 md:h-20" 
+          />
+          
           <div className="relative z-10 text-center space-y-6">
-            <h3 className="text-3xl font-serif font-bold text-brand-black mb-6">Nuestra Propuesta</h3>
+            <h3 className="text-4xl  md:text-5xl  font-serif font-bold text-brand-black mb-6">Nuestra Propuesta</h3>
             <p className="text-lg text-brand-black/80 leading-relaxed">
               <strong>DIANA</strong> propone un espacio con nombre propio, voz humana y criterio donde la experiencia de paciente se cruza 
               con el conocimiento de los profesionales de la salud para acompañar de forma honesta a quienes atraviesan este proceso.
@@ -77,7 +80,6 @@ const AboutProject: React.FC = () => {
             </p>
           </div>
         </div>
-
         {/* SEPARADOR */}
         {/* <div className="h-px w-full bg-brand-black/10 mb-20"></div> */}
 
