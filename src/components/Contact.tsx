@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Instagram, ChevronDown, CheckCircle } from 'lucide-react';
+// IMPORTANTE: He añadido 'Mail' a las importaciones
+import { Instagram, ChevronDown, CheckCircle, Mail } from 'lucide-react';
 
 const Contact: React.FC = () => {
   // Estado para saber si el formulario se ha enviado
@@ -14,7 +15,7 @@ const Contact: React.FC = () => {
 
   // La función que maneja el envío
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // 1. EVITA QUE LA PÁGINA SE RECARGUE (Adiós error 404)
+    e.preventDefault(); // EVITA QUE LA PÁGINA SE RECARGUE
     setFormStatus('submitting');
 
     const formData = new FormData(e.currentTarget);
@@ -42,13 +43,26 @@ const Contact: React.FC = () => {
               Escríbenos, estamos aquí para ayudarte.
             </p>
             <div className="space-y-10">
+              
+              {/* BLOQUE DE INSTAGRAM */}
               <div className="flex items-center gap-6">
                 <div className="p-4 bg-lavender rounded-2xl manual-border text-brand-black"><Instagram /></div>
                 <div>
                   <p className="text-sm font-bold uppercase tracking-widest text-brand-black/40">Comunidad</p>
-                  <a href="https://www.instagram.com/dianatcuida/" target="_blank" rel="noreferrer" className="text-2xl font-bold link-style text-brand-black">@dianatcuida</a>
+                  <a href="https://www.instagram.com/dianatcuida/" target="_blank" rel="noreferrer" className="text-2xl md:text-3xl font-bold link-style text-brand-black">@dianatcuida</a>
                 </div>
               </div>
+
+              {/* BLOQUE DE EMAIL (NUEVO) */}
+              <div className="flex items-center gap-6">
+                <div className="p-4 bg-primary/20 rounded-2xl manual-border text-brand-black"><Mail /></div>
+                <div>
+                  <p className="text-sm font-bold uppercase tracking-widest text-brand-black/40">Email Directo</p>
+                  {/* Cámbia el href y el texto por tu email real */}
+                  <a href="mailto:dianatcuida@gmail.com" className="text-2xl md:text-3xl font-bold link-style text-brand-black">dianatcuida@gmail.com</a>
+                </div>
+              </div>
+
             </div>
           </div>
           

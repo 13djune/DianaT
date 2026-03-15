@@ -14,7 +14,7 @@ const ChannelsSection: React.FC = () => {
           <article className="bg-white p-12 rounded-editoral manual-border editorial-shadow hover:-translate-y-2 transition-transform">
             <div className="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center mb-8 text-brand-black"><Instagram size={30}/></div>
             <h3 className="text-3xl font-serif font-bold mb-4 text-brand-black">El Pulso</h3>
-            <p className=" font-serif text-lg text-brand-black/70 mb-8 leading-relaxed ">
+            <p className=" font-serif text-lg text-brand-black/70 mb-8 leading-relaxed italic">
             DianaTinspira            </p>
             <p className="text-lg text-brand-black/70 mb-8 leading-relaxed">
               Inspiración diaria y conexión emocional. El espacio donde el proyecto respira y conversa contigo cada día.
@@ -25,7 +25,7 @@ const ChannelsSection: React.FC = () => {
           <article className="bg-lavender p-12 rounded-editoral manual-border editorial-shadow hover:-translate-y-2 transition-transform">
             <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-8 text-brand-black"><Mic size={30}/></div>
             <h3 className="text-3xl font-serif font-bold mb-4 text-brand-black">La Profundidad</h3>
-            <p className=" font-serif text-lg text-brand-black/70 mb-8 leading-relaxed ">
+            <p className=" font-serif text-lg text-brand-black/70 mb-8 leading-relaxed italic">
 DianaTinforma            </p>
             <p className="text-lg text-brand-black/70 mb-8 leading-relaxed ">
               Conversaciones con profesionales para comprender la enfermedad con rigor científico y perspectiva humana.
@@ -36,19 +36,28 @@ DianaTinforma            </p>
           <article className="bg-white p-12 rounded-editoral manual-border editorial-shadow hover:-translate-y-2 transition-transform">
             <div className="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center mb-8 text-brand-black"><Mail size={30}/></div>
             <h3 className="text-3xl font-serif font-bold mb-4 text-brand-black">El Núcleo</h3>
-            <p className="font-serif text-lg text-brand-black/70 mb-8 leading-relaxed ">
+            <p className="font-serif text-lg text-brand-black/70 mb-8 leading-relaxed italic">
             DianaTescribe           </p>
             <p className="text-lg text-brand-black/70 mb-8 leading-relaxed">
               Nuestro espacio más íntimo. Reflexiones exclusivas para profundizar en los temas que más nos importan.
             </p>
-            <form className="space-y-4">
-              <input 
-                type="email" 
-                placeholder="Tu email..." 
-                className="w-full bg-transparent border-b-2 border-brand-black py-3 outline-none focus:bg-primary/10 transition-all text-lg italic text-brand-black"
-              />
-              <button className="w-full bg-brand-black text-white py-4 rounded-full font-bold hover:bg-primary hover:text-brand-black transition-all">Suscríbete a la Newsletter</button>
-            </form>
+            <form 
+  action="https://gmail.us3.list-manage.com/subscribe/post?u=88c6c34b489f260d471671333&amp;id=c7293481d7&amp;f_id=00b7dee3f0" 
+  method="POST" 
+  target="_blank" 
+  className="space-y-4"
+>
+  <input 
+    type="email" 
+    name="EMAIL" // Importante: Mailchimp necesita que el name sea "EMAIL"
+    required 
+    placeholder="Tu email..." 
+    className="w-full bg-transparent border-b-2 border-brand-black py-3 outline-none focus:bg-primary/10 transition-all text-lg italic text-brand-black"
+  />
+  <button type="submit" className="w-full bg-brand-black text-white py-4 rounded-full font-bold hover:bg-primary hover:text-brand-black transition-all">
+    Suscríbete a la Newsletter
+  </button>
+</form>
           </article>
         </div>
       </div>
