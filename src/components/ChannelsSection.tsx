@@ -28,7 +28,7 @@ const ChannelsSection: React.FC = () => {
             <p className=" font-serif text-lg text-brand-black/70 mb-8 leading-relaxed italic">
 DianaTinforma            </p>
             <p className="text-lg text-brand-black/70 mb-8 leading-relaxed ">
-              Conversaciones con profesionales para comprender la enfermedad con rigor científico y perspectiva humana.
+              Conversaciones con profesionales y Dianas para comprender la enfermedad con rigor científico y perspectiva humana.
             </p>
             <p rel="noreferrer" title="En proceso..." className="font-bold link-style inline-flex items-center gap-2 text-brand-black cursor-not-allowed">Podcast en proceso...<LockKeyhole size={18}/></p>
           </article>
