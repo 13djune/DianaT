@@ -33,7 +33,7 @@ DianaTinforma            </p>
             <p rel="noreferrer" title="En proceso..." className="font-bold link-style inline-flex items-center gap-2 text-brand-black cursor-not-allowed">Podcast en proceso...<LockKeyhole size={18}/></p>
           </article>
 
-          <article className="bg-white p-12 rounded-editoral manual-border editorial-shadow hover:-translate-y-2 transition-transform">
+          <article className="bg-white p-12 rounded-editoral manual-border editorial-shadow hover:-translate-y-2 transition-transform" id="Newsletter">
             <div className="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center mb-8 text-brand-black"><Mail size={30}/></div>
             <h3 className="text-3xl font-serif font-bold mb-4 text-brand-black">El Núcleo</h3>
             <p className="font-serif text-lg text-brand-black/70 mb-8 leading-relaxed italic">
