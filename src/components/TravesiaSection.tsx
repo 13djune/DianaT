@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Compass, HeartPulse, Sprout, CalendarCheck, X } from 'lucide-react';
-
+import buscandoImg from '../assets/img/buscando.PNG'; // Ajusta la ruta relativa según donde esté tu componente
 const TravesiaSection: React.FC = () => {
   const [selectedEtapa, setSelectedEtapa] = useState<number | null>(null);
 
@@ -29,7 +29,7 @@ const TravesiaSection: React.FC = () => {
             {/* Imagen: centrada y con tamaño controlado para que no estorbe */}
             <div className="w-full lg:w-1/3 flex justify-center">
               <img 
-                src="src/assets/img/buscando.PNG" 
+                src={buscandoImg}
                 alt="Chica buscando con una lupa" 
                 className="w-48 lg:w-full h-auto object-contain" 
               />

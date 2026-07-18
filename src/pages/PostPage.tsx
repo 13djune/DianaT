@@ -35,12 +35,10 @@ const PostPage: React.FC = () => {
       <section className="bg-[#FBF5FA] pt-24 pb-16 px-6 border-b-[4px] border-black">
         <div className="max-w-4xl mx-auto text-center">
           
-          {/* ESPACIO PARA IMAGEN (PNG sin bordes) */}
           <div className="mb-12 flex justify-center">
-            {/* Sustituye la ruta del src por la tuya cuando la tengas lista */}
-            <div className="w-32 h-32 flex items-center justify-center">
+            {/* <div className="w-32 h-32 flex items-center justify-center">
                <img src="/tu-imagen.png" alt="" className="object-contain" />
-            </div>
+            </div> */}
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-brand-black uppercase leading-tight mb-2 tracking-tight">
