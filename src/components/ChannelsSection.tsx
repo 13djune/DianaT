@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Mic, Mail, ArrowRight, Play, LockKeyhole } from 'lucide-react';
+import { Instagram, Mic, Mail, ArrowRight, Play, LockKeyhole, BookOpen } from 'lucide-react';
 
 const ChannelsSection: React.FC = () => {
   return (
@@ -19,14 +19,14 @@ const ChannelsSection: React.FC = () => {
             <p className="text-lg text-brand-black/70 mb-8 leading-relaxed">
               Inspiración diaria y conexión emocional. El espacio donde el proyecto respira y conversa contigo cada día.
             </p>
-            <a href="https://www.instagram.com/dianatcuida/" target="_blank" rel="noreferrer" className="font-bold link-style inline-flex items-center gap-2 text-brand-black">@dianatcuida <ArrowRight size={18}/></a>
+            <a href="https://www.instagram.com/dianatcuida/" target="_blank" rel="noreferrer" className="font-bold link-style inline-flex items-center gap-2 text-brand-black hover:text-primary transition-colors">@dianatcuida <ArrowRight size={18}/></a>
           </article>
 
           <article className="bg-lavender p-12 rounded-editoral manual-border editorial-shadow hover:-translate-y-2 transition-transform">
             <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-8 text-brand-black"><Mic size={30}/></div>
             <h3 className="text-3xl font-serif font-bold mb-4 text-brand-black">La Profundidad</h3>
             <p className=" font-serif text-lg text-brand-black/70 mb-8 leading-relaxed italic">
-DianaTinforma            </p>
+            DianaTinforma            </p>
             <p className="text-lg text-brand-black/70 mb-8 leading-relaxed ">
               Conversaciones con profesionales y Dianas para comprender la enfermedad con rigor científico y perspectiva humana.
             </p>
@@ -42,22 +42,29 @@ DianaTinforma            </p>
               Nuestro espacio más íntimo. Reflexiones exclusivas para profundizar en los temas que más nos importan.
             </p>
             <form 
-  action="https://gmail.us3.list-manage.com/subscribe/post?u=88c6c34b489f260d471671333&amp;id=c7293481d7&amp;f_id=00b7dee3f0" 
-  method="POST" 
-  target="_blank" 
-  className="space-y-4"
->
-  <input 
-    type="email" 
-    name="EMAIL" // Importante: Mailchimp necesita que el name sea "EMAIL"
-    required 
-    placeholder="Tu email..." 
-    className="w-full bg-transparent border-b-2 border-brand-black py-3 outline-none focus:bg-primary/10 transition-all text-lg italic text-brand-black"
-  />
-  <button type="submit" className="w-full bg-brand-black text-white py-4 rounded-full font-bold hover:bg-primary hover:text-brand-black transition-all">
-    Suscríbete a la Newsletter
-  </button>
-</form>
+              action="https://gmail.us3.list-manage.com/subscribe/post?u=88c6c34b489f260d471671333&amp;id=c7293481d7&amp;f_id=00b7dee3f0" 
+              method="POST" 
+              target="_blank" 
+              className="space-y-4 mb-8"
+            >
+              <input 
+                type="email" 
+                name="EMAIL" 
+                required 
+                placeholder="Tu email..." 
+                className="w-full bg-transparent border-b-2 border-brand-black py-3 outline-none focus:bg-primary/10 transition-all text-lg italic text-brand-black"
+              />
+              <button type="submit" className="w-full bg-brand-black text-white py-4 rounded-full font-bold hover:bg-primary hover:text-brand-black transition-all">
+                Suscríbete a la Newsletter
+              </button>
+            </form>
+
+            {/* Nuevo botón para ir al archivo */}
+            <div className="pt-6">
+              <a href="/archivo-newsletters" className="font-bold link-style inline-flex items-center gap-2 text-brand-black hover:text-primary transition-colors">
+                Ver newsletters anteriores <BookOpen size={18}/>
+              </a>
+            </div>
           </article>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import HomePage from './pages/HomePage';
 import BlogPage from './pages/BlogPage';
 import PostPage from './pages/PostPage';
+import NewsletterArchive from './pages/NewsletterArchive';
 import './index.css';
 
 // Componente auxiliar para gestionar el scroll a los #IDs
@@ -36,7 +37,8 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/noticias" element={<BlogPage />} />
-        <Route path="/noticia/:id" element={<PostPage />} />
+        <Route path="/archivo-newsletters" element={<NewsletterArchive />} />
+        <Route path="/post/:id" element={<PostPage />} />
       </Routes>
     </Router>
   );
