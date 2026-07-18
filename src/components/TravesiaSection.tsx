@@ -13,7 +13,6 @@ const TravesiaSection: React.FC = () => {
       icon: <Compass className="w-6 h-6" />,
       modalContent: (
         <div className="space-y-8 text-left text-brand-black/80">
-          <p className="text-3xl font-serif font-bold text-brand-black">DIAGNÓSTICO</p>
           
           {/* Layout optimizado: apilado en móvil, columnas en escritorio */}
           <div className="flex flex-col lg:flex-row gap-8 items-start">
