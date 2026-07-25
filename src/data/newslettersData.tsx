@@ -412,7 +412,8 @@ export const newslettersData = [
     title: "¿Y SI VUELVE?",
     subtitle: "La fiesta de la incertidumbre",
     excerpt: "El cáncer puede desaparecer, pero el miedo a que vuelva acompaña a cuatro de cada cinco supervivientes durante años.",
-    isPublished: false,
+    // Programado para salir el Domingo 26 de Julio a las 18:00
+    isPublished: new Date() >= new Date('2026-07-26T18:00:00+02:00'),
     intro: (
       <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
         El cáncer puede desaparecer, pero el <strong>miedo a que vuelva acompaña a cuatro de cada cinco supervivientes</strong> durante años. Después del tratamiento, una de las preocupaciones más frecuentes es que el cáncer regrese. Y esto también tiene un nombre: <strong>“Scanxiety”</strong> (combinación de scan y anxiety). Ansiedad asociada a los estudios de control.
@@ -451,6 +452,125 @@ export const newslettersData = [
         title: "ACBS:",
         text: "Association for Contextual Behavioral Science es la organización internacional de referencia en ACT.",
         link: "https://contextualscience.org/"
+      }
+    ]
+  },
+  {
+    id: "10",
+    tag: "NEWSLETTER 10",
+    title: "EL PODER DE “LA ROJA”",
+    subtitle: "Del rugido del estadio al silencio de la infusión",
+    excerpt: "El color rojo tiene la extraña virtud de no dejar a nadie indiferente. Provoca un impacto inmediato en el cerebro humano...",
+    // Programado para salir el Domingo 26 de Julio a las 18:00
+    isPublished: new Date() >= new Date('2026-07-26T18:00:00+02:00'),
+    intro: (
+      <>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          <strong>El color rojo tiene la extraña virtud de no dejar a nadie indiferente.</strong> Provoca un impacto inmediato en el cerebro humano. Es el primer tono que registra nuestra retina, una descarga directa al sistema nervioso que despierta nuestros instintos antes de que la razón logre articular una sola palabra.
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+          Simboliza el fuego y la sangre representando emociones extremas como la pasión, el poder y el amor. También la alerta y el peligro.
+        </p>
+      </>
+    ),
+    diana: (
+      <>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          Durante años, he identificado el rojo como símbolo supremo de euforia colectiva. Lo acabamos de contemplar en esa marea humana que llamamos “La Roja”. Millones de desconocidos se han fundido en un solo abrazo olvidando los sinsabores cotidianos para transformarlos en un sentimiento de orgullo colectivo.
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          En este camino por el cáncer, <strong>he podido descubrir otra faceta de ese mismo color</strong>, una que no habita en estadios ruidosos sino en el silencio blanco y estéril de una sala de oncología. La otra “roja”: la <em>quimioterapia roja</em>.
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-8 max-w-2xl mx-auto">
+          Solo los que han cruzado ese pasillo saben exactamente de lo que hablo. Son medicamentos de un rojo brillante, casi magnético, que entran en el cuerpo para librar la batalla más salvaje de todas. Ver ese líquido por primera vez asusta, porque recibir esa “roja” desata una tormenta física y emocional que fractura el alma. Y aquí vuelve a brotar la magia de la perspectiva: <strong>el rojo no es el color del monstruo, es el color del escudo.</strong> Es la fuerza bruta de la ciencia destrozando aquello que intenta apagar la vida.
+        </p>
+        <p className="text-xl md:text-2xl font-bold text-brand-black text-center mt-12 max-w-2xl mx-auto">
+          ¿Tú también crees el poder del rojo?
+        </p>
+      </>
+    ),
+    expertos: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        La quimioterapia roja, término coloquial para referirse a la familia de las antraciclinas, <strong>es considerada uno de los pilares más potentes, eficaces y agresivos de la oncología moderna.</strong> Es el “fichaje estrella” en tumores específicos de rápido crecimiento. Su misión es bloquear la enzima que permite a las células tumorales duplicar su ADN.
+      </p>
+    ),
+    reflexionando: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        El rojo del fútbol y el rojo de la quimio comparten la misma esencia: <strong>ninguno de los dos se juega en solitario.</strong> En ambos escenarios se necesita de un equipo, de una resistencia inquebrantable y de una fe ciega en que la vida volverá a florecer.
+      </p>
+    ),
+    recomendaciones: [
+      {
+        title: "Psicología del color",
+        text: "Libro recomendado de Eva Heller.",
+        link: "https://www.google.com/search?q=%E2%80%A2+Psicolog%C3%ADa+del+color+de+Eva+Heller&rlz=1C5CHFA_enES997ES1030&oq=%E2%80%A2%09Psicolog%C3%ADa+del+color+de+Eva+Heller&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBBzEzNmowajSoAgCwAgA&sourceid=chrome&ie=UTF-8"
+      },
+      {
+        title: "Artículo: ¿Qué es la quimioterapia roja?",
+        text: "De Nutrición Vive.",
+        link: "https://www.nutricionvive.com/blog/quimioterapia-roja/"
+      }
+    ]
+  },
+  {
+    id: "11",
+    tag: "NEWSLETTER 11",
+    title: "SISU",
+    subtitle: "La fuerza que sale de tus entrañas",
+    excerpt: "Sisu es un concepto finlandés que describe la fuerza interior de determinación, coraje, resiliencia y perseverancia absoluta ante la adversidad.",
+    // Programado para salir el Sábado 1 de Agosto a las 18:00
+    isPublished: new Date() >= new Date('2026-08-01T18:00:00+02:00'),
+    intro: (
+      <>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          <strong>Sisu es un concepto finlandés</strong> que describe la fuerza interior de determinación, coraje, resiliencia y perseverancia absoluta ante la adversidad. 
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+          Es una reserva de energía oculta que habita en lo más profundo del cuerpo y que se activa de forma consciente ante crisis extremas. <strong>Una fuerza de emergencia</strong> que se moviliza cuando el plan a largo plazo ha fallado y te enfrentas a una barrera que parece insuperable.
+        </p>
+      </>
+    ),
+    diana: (
+      <>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          Nos han enseñado que para ser “fuertes” ante la enfermedad, debemos mantener una actitud positiva, sonreír a pesar de todo y repetir “querer es poder”. Pero cuando el cuerpo duele, cuando la incertidumbre quema y el cansancio te parte por la mitad, <strong>esa presión no es fuerza; es una carga más.</strong>
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          La verdadera fortaleza no es una coraza de superheroína. Nace en las entrañas y se expresa en voz baja. <strong>Es decidir respirar hondo una vez más cuando tienes miedo</strong>, es llorar en la ducha y seguir aquí, es entender que descansar, ceder y pedir ayuda no es rendirse.
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-8 max-w-2xl mx-auto">
+          Pues sí Dianas, esa fuerza que sacamos cuando estamos hundidas en la mierda, resulta que también tiene un nombre bonito. Nuestro “tener agallas”, nuestro sacar fuerzas de “las entrañas”, los finlandeses lo llaman <em>Sisu</em>. Para ellos es el motor que les permite mirar al futuro de forma aguerrida y honesta. Parece ser que se trata de una capacidad humana que todos podemos desarrollar.
+        </p>
+        <p className="text-xl md:text-2xl font-bold text-brand-black text-center mt-12 max-w-2xl mx-auto">
+          ¿Sisuamos?
+        </p>
+      </>
+    ),
+    expertos: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        El <em>Sisu</em> no te pide que dejes de sentir miedo, tristeza o dolor; te pide simplemente, que camines al lado de esas emociones sin permitir que te detengan por completo. La psicología moderna propone el <strong>Sisu amable</strong>; una combinación de resiliencia inquebrantable con una profunda autocompasión. Es la capacidad de resistir, pero escuchando y respetando los límites de tu cuerpo.
+      </p>
+    ),
+    reflexionando: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        Me alegra descubrir que hay una palabra maravillosa para nombrar esa fuerza invisible que me ha hecho dar un paso más en esos días en que el cuerpo me ha pesado una tonelada y me he sentido absorbida por el sofá. Porque no tenemos que comernos el mundo hoy. <strong>Si hoy solo te da la energía para abrir los ojos y aguantar el día, que nadie te diga que no estás siendo valiente.</strong>
+      </p>
+    ),
+    recomendaciones: [
+      {
+        title: "Sisu Lab",
+        text: "Dra. Emilia Elisabet Lahti.",
+        link: "https://open.spotify.com/show/1PFgLctyaT8CSpW5Ub5SaR?si=31b31781a25d4386"
+      },
+      {
+        title: "Sisu: el arte finlandés del coraje",
+        text: "Libro de Joanna Nylund.",
+        link: "https://www.google.com/search?q=Sisu%3A+el+arte+finland%C3%A9s+del+coraje+de+Joanna+Nylund&sca_esv=c969e903d0d984e6&rlz=1C5CHFA_enES997ES1030&biw=1512&bih=784&sxsrf=APpeQnuXI4u-ygwnyskHG17YbCgVlYT1dA%3A1784973653180&ei=VYlkatvOCt-HkdUP6tSBsAQ&ved=0ahUKEwibzZ-Eye2VAxXfQ6QEHWpqAEYQ4dUDCBA&uact=5&oq=Sisu%3A+el+arte+finland%C3%A9s+del+coraje+de+Joanna+Nylund&gs_lp=Egxnd3Mtd2l6LXNlcnAiNFNpc3U6IGVsIGFydGUgZmlubGFuZMOpcyBkZWwgY29yYWplIGRlIEpvYW5uYSBOeWx1bmQyBRAAGO8FMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIESKEOUPoIWLYLcAF4AJABAJgBcKAB3QGqAQMwLjK4AQPIAQD4AQGYAgOgAukBwgIIEAAY7wUYsAPCAgsQABiABBiiBBiwA5gDAIgGAZAGBJIHAzEuMqAH7wOyBwMwLjK4B-YBwgcDMC4zyAcGgAgB&sclient=gws-wiz-serp"
+      },
+      {
+        title: "Sisu: el secreto finlandés para un estilo de vida feliz",
+        text: "Libro de Katja Pantzar.",
+        link: "https://www.google.com/search?q=Sisu%3A+el+secreto+finland%C3%A9s+para+un+estilo+de+vida+feliz+de+Katja+Pantzar&sca_esv=c969e903d0d984e6&rlz=1C5CHFA_enES997ES1030&sxsrf=APpeQntzJ65Vun8zzhXb8ujb8yYtD6Sw3Q%3A1784973837968&ei=DYpkau3WOr6kkdUPh6WLuQY&biw=1512&bih=784&ved=0ahUKEwitka7cye2VAxU-UqQEHYfSImcQ4dUDCBA&uact=5&oq=Sisu%3A+el+secreto+finland%C3%A9s+para+un+estilo+de+vida+feliz+de+Katja+Pantzar&gs_lp=Egxnd3Mtd2l6LXNlcnAiSVNpc3U6IGVsIHNlY3JldG8gZmlubGFuZMOpcyBwYXJhIHVuIGVzdGlsbyBkZSB2aWRhIGZlbGl6IGRlIEthdGphIFBhbnR6YXJI2glQygJYiQRwAXgAkAEAmAFPoAGSAaoBATK4AQPIAQD4AQGYAgCgAgCYAwCIBgGSBwCgB7cBsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
       }
     ]
   }
