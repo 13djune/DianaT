@@ -573,5 +573,62 @@ export const newslettersData = [
         link: "https://www.google.com/search?q=Sisu%3A+el+secreto+finland%C3%A9s+para+un+estilo+de+vida+feliz+de+Katja+Pantzar&sca_esv=c969e903d0d984e6&rlz=1C5CHFA_enES997ES1030&sxsrf=APpeQntzJ65Vun8zzhXb8ujb8yYtD6Sw3Q%3A1784973837968&ei=DYpkau3WOr6kkdUPh6WLuQY&biw=1512&bih=784&ved=0ahUKEwitka7cye2VAxU-UqQEHYfSImcQ4dUDCBA&uact=5&oq=Sisu%3A+el+secreto+finland%C3%A9s+para+un+estilo+de+vida+feliz+de+Katja+Pantzar&gs_lp=Egxnd3Mtd2l6LXNlcnAiSVNpc3U6IGVsIHNlY3JldG8gZmlubGFuZMOpcyBwYXJhIHVuIGVzdGlsbyBkZSB2aWRhIGZlbGl6IGRlIEthdGphIFBhbnR6YXJI2glQygJYiQRwAXgAkAEAmAFPoAGSAaoBATK4AQPIAQD4AQGYAgCgAgCYAwCIBgGSBwCgB7cBsgcAuAcAwgcAyAcAgAgB&sclient=gws-wiz-serp"
       }
     ]
+  },
+  {
+    id: "12",
+    tag: "NEWSLETTER 12",
+    title: "La casa en llamas",
+    subtitle: "Cuando el planeta enferma",
+    excerpt: "No hay salud en un planeta enfermo. El humo de los incendios forestales es una mezcla compleja de contaminantes potencialmente tóxicos que afecta a nuestro cuerpo entero.",
+    // Programado para salir el Sábado 15 de Agosto a las 18:00
+    isPublished: new Date() >= new Date('2026-08-15T18:00:00+02:00'),
+    intro: (
+      <>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          <strong>No hay salud en un planeta enfermo.</strong> El humo de los incendios forestales es una mezcla compleja de contaminantes potencialmente tóxicos. Entre ellos se encuentran sustancias clasificadas como carcinógenas y otras capaces de alterar el sistema endocrino.
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+          Respirar este humo durante unos días no se asocia, por sí solo, con el desarrollo de un cáncer. Sin embargo, cuando esta exposición se suma a otros factores de riesgo, <strong>puede aumentar la probabilidad de desarrollarlo.</strong>
+        </p>
+      </>
+    ),
+    diana: (
+      <>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          La Tierra no tiene un plan de pensiones, ni nosotros un cuerpo de repuesto en el garaje. Cuando un bosque arde, las llamas son solo la parte visible del problema. El calor, el humo y la destrucción continúan mucho después de que el fuego se apague. Con el cáncer ocurre algo parecido. Aunque el tumor sea el protagonista, la parte visible de la enfermedad, el cuerpo entero responde. <strong>Es como estar en llamas, como si algo se estuviera quemando por dentro.</strong>
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          Hace siglos que la sabiduría popular nos recuerda que “más vale prevenir que curar”. Cuando prevenimos un incendio forestal limpiando los bosques en invierno, vigilando las colillas o multando a los pirómanos, cuando cuidamos el medioambiente, estamos haciendo <strong>medicina preventiva masiva.</strong>
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-8 max-w-2xl mx-auto">
+          Con nuestro cuerpo pasa lo mismo. Mi forma de vida encajaba dentro de los estándares de personas que se cuidan: ejercicio, dieta mediterránea… Eso no ha sido garantía para evitar que el bicho viniera a verme. Dos veces. Sin embargo, ese cuidado previo me ha ayudado a sobrellevar mejor la enfermedad y su tratamiento.
+        </p>
+        <p className="text-xl md:text-2xl font-bold text-brand-black text-center mt-12 max-w-2xl mx-auto">
+          ¿Tú te cuidas, Diana?
+        </p>
+      </>
+    ),
+    expertos: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        <strong>Los grandes incendios no se apagan, se previenen.</strong> El cambio climático aumenta el riesgo, pero la gestión del territorio y la prevención son decisivas para evitar una catástrofe. Porque no basta con apagar incendios; hay que gestionar los bosques. Se trata de una correlación matemática: a más hectáreas quemadas, más cuerpos enfermos y <strong>si la Tierra cae, nosotros caemos con ella.</strong>
+      </p>
+    ),
+    reflexionando: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        No aprendemos de las llamas. Cada verano repetimos la misma historia esperando un final diferente. Si en salud sabemos que prevenir siempre es mejor que reparar después del daño, ¿por qué no aplicamos esa lógica a nuestro cuerpo y al planeta? Dejemos de ser el animal que tropieza dos veces en la misma piedra. <strong>Más paseos conscientes por el bosque y un poco más de amor a este cuerpo (el tuyo) y a este hogar (el de todos).</strong>
+      </p>
+    ),
+    recomendaciones: [
+      {
+        title: "Fundación Ecología y Desarrollo (ECODES)",
+        text: "Trabaja en proyectos conjuntos con la AECC para demostrar el vínculo directo entre un planeta sano y la salud de las personas.",
+        link: "https://ecodes.org/"
+      },
+      {
+        title: "Planeta azul, planeta verde",
+        text: "Libro de Ramón Margalef (1992).",
+        link: "https://es.scribd.com/document/478038890/Margalef-Planeta-Azul-Planeta-Verde"
+      }
+    ]
   }
 ];
