@@ -23,7 +23,7 @@ const Header: React.FC = () => {
     alt="DianaT Logo" 
     className="h-10 w-auto object-contain" 
   />
-              <span className="text-2xl font-serif font-bold tracking-tight text-brand-black">Diana<span className="text-primary">T</span></span>
+              <span className="text-2xl font-serif font-bold tracking-tight text-brand-black">Diana<span className="text-primary">T</span> ©</span>
           </Link>
           
           {/* MENÚ DE ESCRITORIO */}
