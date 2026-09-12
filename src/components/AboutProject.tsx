@@ -57,13 +57,13 @@ const AboutProject: React.FC = () => {
 
         </div>
 
-        {/* PARTE 2: LA MISIÓN */}
-        <div className="bg-soft-lilac/40 p-10 md:p-14 rounded-[40px] manual-border editorial-shadow mb-24 relative overflow-hidden flex flex-col md:flex-row items-center gap-12">
+        {/* PARTE 2: LA MISIÓN (Maquetación original conservada) */}
+        <div className="bg-soft-lilac/40 p-10 md:p-14 rounded-[40px] manual-border editorial-shadow mb-24 relative overflow-hidden">
           <HeartHandshake 
             className="absolute top-4 left-4 md:top-8 md:left-8 text-primary/40 transform -scale-x-100 w-16 h-16 md:w-20 md:h-20" 
           />
           
-          <div className="relative z-10 md:w-2/3 text-center md:text-left space-y-6 pt-12 md:pt-0">
+          <div className="relative z-10 text-center space-y-6">
             <h3 className="text-4xl md:text-5xl font-serif font-bold text-brand-black mb-6">Nuestra Propuesta</h3>
             <p className="text-lg text-brand-black/80 leading-relaxed">
               <strong>DIANA</strong> propone un espacio con nombre propio, voz humana y criterio donde la experiencia de paciente se cruza 
@@ -77,17 +77,26 @@ const AboutProject: React.FC = () => {
               Queremos construir un ecosistema de contenido fiable, humano y diferenciado que se convierta en un referente 
               de acompañamiento informado. Una voz fiable y una comunidad sólida que crece desde la confianza, no desde el ruido.
             </p>
-          </div>
-
-          {/* IMAGEN AÑADIDA */}
-          <div className="relative z-10 md:w-1/3 flex justify-center w-full">
-            <img 
-              src={abrazoImg} 
-              alt="Abrazo y comunidad" 
-              className="w-full max-w-[280px] h-auto object-cover rounded-2xl drop-shadow-xl manual-border rotate-3 hover:rotate-0 transition-transform duration-300"
-            />
+            
+            {/* IMAGEN INTEGRADA DECORATIVA: negro absoluto y sin fondo */}
+            <div className="flex justify-center pt-8 opacity-80">
+              <img 
+                src={abrazoImg} 
+                alt="Abrazo y comunidad" 
+                className="w-32 md:w-48 h-auto object-contain brightness-0 mix-blend-multiply"
+              />
+            </div>
           </div>
         </div>
+
+        {/* SEPARADOR */}
+        {/* <div className="h-px w-full bg-brand-black/10 mb-20"></div> */}
+
+        {/* PARTE 3: Equipo Fijo */}
+        {/* ... */}
+        
+        {/* PARTE 4: COLABORADORES */}
+        {/* ... */}
 
       </div>
     </section>

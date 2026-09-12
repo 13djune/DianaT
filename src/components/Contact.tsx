@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Instagram, ChevronDown, CheckCircle, Mail } from 'lucide-react';
-// Importamos la imagen. Ajusta la cantidad de "../" según la carpeta de este componente
 import manoHombroImg from '../assets/img/mano_hombro.png';
 
 const Contact: React.FC = () => {
@@ -16,7 +15,7 @@ const Contact: React.FC = () => {
 
   // La función que maneja el envío
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // EVITA QUE LA PÁGINA SE RECARGUE
+    e.preventDefault();
     setFormStatus('submitting');
 
     const formData = new FormData(e.currentTarget);
@@ -39,14 +38,13 @@ const Contact: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
           
-          {/* ZONA DE TEXTO, CONTACTO E IMAGEN */}
-          <div className="flex flex-col h-full">
+          {/* COLUMNA IZQUIERDA (Maquetación original) */}
+          <div>
             <h2 className="text-5xl md:text-7xl font-serif font-bold mb-8 leading-tight italic text-brand-black">DianaTescucha</h2>
             <p className="text-2xl text-brand-black/80 mb-12 italic leading-relaxed">
               Escríbenos, estamos aquí para ayudarte.
             </p>
-            
-            <div className="space-y-10 mb-16">
+            <div className="space-y-10">
               
               {/* BLOQUE DE INSTAGRAM */}
               <div className="flex items-center gap-6">
@@ -68,12 +66,12 @@ const Contact: React.FC = () => {
 
             </div>
 
-            {/* IMAGEN AÑADIDA */}
-            <div className="mt-auto">
+            {/* IMAGEN INTEGRADA DECORATIVA: negro absoluto y sin fondo */}
+            <div className="mt-16 flex justify-start opacity-70">
               <img 
                 src={manoHombroImg} 
-                alt="Mano en el hombro, apoyo y cuidado" 
-                className="w-full max-w-md h-auto object-cover rounded-2xl drop-shadow-xl manual-border -rotate-2 opacity-90 transition-transform hover:rotate-0 duration-300"
+                alt="Apoyo y cuidado" 
+                className="w-40 md:w-56 h-auto object-contain brightness-0 mix-blend-multiply rotate-3"
               />
             </div>
           </div>
@@ -81,7 +79,6 @@ const Contact: React.FC = () => {
           {/* ZONA DEL FORMULARIO */}
           <div className="bg-soft-lilac/30 p-12 rounded-editoral manual-border editorial-shadow min-h-[500px] flex flex-col justify-center">
             
-            {/* Si ya se envió correctamente, mostramos mensaje de GRACIAS */}
             {formStatus === 'success' ? (
               <div className="text-center animate-fade-in">
                 <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 text-brand-black">
@@ -105,7 +102,6 @@ const Contact: React.FC = () => {
                 data-netlify="true" 
                 onSubmit={handleSubmit} 
               >
-                {/* Input oculto obligatorio */}
                 <input type="hidden" name="form-name" value="contacto-dianat" />
 
                 <div className="space-y-8">
