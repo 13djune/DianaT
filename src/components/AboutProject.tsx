@@ -75,7 +75,7 @@ const AboutProject: React.FC = () => {
             </p>
             
             {/* TEXTO A LA IZQUIERDA E IMAGEN A LA DERECHA */}
-            <div className="flex flex-col md:flex-row items-center md:items-start md:text-left gap-8 pt-6">
+            <div className="flex flex-col md:flex-row items-center md:text-left gap-8 pt-6">
               <p className="text-xl font-bold text-brand-black font-serif italic flex-1">
                 Queremos construir un ecosistema de contenido fiable, humano y diferenciado que se convierta en un referente 
                 de acompañamiento informado. Una voz fiable y una comunidad sólida que crece desde la confianza, no desde el ruido.
