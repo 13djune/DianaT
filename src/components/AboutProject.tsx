@@ -1,5 +1,7 @@
 import React from 'react';
-import { Heart, Users,  HandHeart, HeartHandshake } from 'lucide-react';
+import { Heart, Users, HandHeart, HeartHandshake } from 'lucide-react';
+// Ajusta la cantidad de "../" dependiendo de en qué carpeta esté este componente
+import abrazoImg from '../../assets/img/abrazo.PNG'; 
 
 const AboutProject: React.FC = () => {
   // 1. EL EQUIPO (FIJOS)
@@ -15,7 +17,6 @@ const AboutProject: React.FC = () => {
     { name: "Asociación Caminar", url: "" },
     { name: "Thayri - Diseñadora", url: "" },
     { name: "Belén - Diseñadora Web", url: "https://www.linkedin.com/in/belen-castillo-chacon" }, 
-
   ];
 
   return (
@@ -27,7 +28,7 @@ const AboutProject: React.FC = () => {
           <div className="inline-flex items-center justify-center p-3 bg-soft-lilac rounded-full mb-6">
             <Heart className="text-brand-black" size={24} />
           </div>
-          <h2 className="text-5xl md:text-7xl  font-serif font-bold mb-4 text-brand-black italic">El Proyecto</h2>
+          <h2 className="text-5xl md:text-7xl font-serif font-bold mb-4 text-brand-black italic">El Proyecto</h2>
           <p className="text-brand-black/60 font-medium uppercase tracking-widest text-sm">Historia, Propósito y Equipo</p>
         </div>
 
@@ -59,13 +60,13 @@ const AboutProject: React.FC = () => {
         </div>
 
         {/* PARTE 2: LA MISIÓN */}
-        <div className="bg-soft-lilac/40 p-10 md:p-14 rounded-[40px] manual-border editorial-shadow mb-24 relative overflow-hidden">
-        <HeartHandshake 
+        <div className="bg-soft-lilac/40 p-10 md:p-14 rounded-[40px] manual-border editorial-shadow mb-24 relative overflow-hidden flex flex-col md:flex-row items-center gap-12">
+          <HeartHandshake 
             className="absolute top-4 left-4 md:top-8 md:left-8 text-primary/40 transform -scale-x-100 w-16 h-16 md:w-20 md:h-20" 
           />
           
-          <div className="relative z-10 text-center space-y-6">
-            <h3 className="text-4xl  md:text-5xl  font-serif font-bold text-brand-black mb-6">Nuestra Propuesta</h3>
+          <div className="relative z-10 md:w-2/3 text-center md:text-left space-y-6 pt-12 md:pt-0">
+            <h3 className="text-4xl md:text-5xl font-serif font-bold text-brand-black mb-6">Nuestra Propuesta</h3>
             <p className="text-lg text-brand-black/80 leading-relaxed">
               <strong>DIANA</strong> propone un espacio con nombre propio, voz humana y criterio donde la experiencia de paciente se cruza 
               con el conocimiento de los profesionales de la salud para acompañar de forma honesta a quienes atraviesan este proceso.
@@ -79,7 +80,17 @@ const AboutProject: React.FC = () => {
               de acompañamiento informado. Una voz fiable y una comunidad sólida que crece desde la confianza, no desde el ruido.
             </p>
           </div>
+
+          {/* IMAGEN AÑADIDA */}
+          <div className="relative z-10 md:w-1/3 flex justify-center w-full">
+            <img 
+              src={abrazoImg} 
+              alt="Abrazo y comunidad" 
+              className="w-full max-w-[280px] h-auto object-cover rounded-2xl drop-shadow-xl manual-border rotate-3 hover:rotate-0 transition-transform duration-300"
+            />
+          </div>
         </div>
+        
         {/* SEPARADOR */}
         {/* <div className="h-px w-full bg-brand-black/10 mb-20"></div> */}
 

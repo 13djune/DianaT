@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-// IMPORTANTE: He añadido 'Mail' a las importaciones
 import { Instagram, ChevronDown, CheckCircle, Mail } from 'lucide-react';
+// Importamos la imagen. Ajusta la cantidad de "../" según la carpeta de este componente
+import manoHombroImg from '../assets/img/mano_hombro.png';
 
 const Contact: React.FC = () => {
   // Estado para saber si el formulario se ha enviado
@@ -37,12 +38,15 @@ const Contact: React.FC = () => {
     <section id="contacto" className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
-          <div>
+          
+          {/* ZONA DE TEXTO, CONTACTO E IMAGEN */}
+          <div className="flex flex-col h-full">
             <h2 className="text-5xl md:text-7xl font-serif font-bold mb-8 leading-tight italic text-brand-black">DianaTescucha</h2>
             <p className="text-2xl text-brand-black/80 mb-12 italic leading-relaxed">
               Escríbenos, estamos aquí para ayudarte.
             </p>
-            <div className="space-y-10">
+            
+            <div className="space-y-10 mb-16">
               
               {/* BLOQUE DE INSTAGRAM */}
               <div className="flex items-center gap-6">
@@ -53,16 +57,24 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
-              {/* BLOQUE DE EMAIL (NUEVO) */}
+              {/* BLOQUE DE EMAIL */}
               <div className="flex items-center gap-6">
                 <div className="p-4 bg-primary/20 rounded-2xl manual-border text-brand-black"><Mail /></div>
                 <div>
                   <p className="text-sm font-bold uppercase tracking-widest text-brand-black/40">Email Directo</p>
-                  {/* Cámbia el href y el texto por tu email real */}
                   <a href="mailto:dianatcuida@gmail.com" className="text-2xl md:text-3xl font-bold link-style text-brand-black">dianatcuida@gmail.com</a>
                 </div>
               </div>
 
+            </div>
+
+            {/* IMAGEN AÑADIDA */}
+            <div className="mt-auto">
+              <img 
+                src={manoHombroImg} 
+                alt="Mano en el hombro, apoyo y cuidado" 
+                className="w-full max-w-md h-auto object-cover rounded-2xl drop-shadow-xl manual-border -rotate-2 opacity-90 transition-transform hover:rotate-0 duration-300"
+              />
             </div>
           </div>
           

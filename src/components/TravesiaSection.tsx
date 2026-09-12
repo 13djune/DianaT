@@ -312,6 +312,7 @@ const TravesiaSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-24">
           <h2 className="text-5xl md:text-7xl font-serif font-bold mb-6 italic text-brand-black">Las Etapas del Camino</h2>
+          <p className="text-lg text-brand-black/60 leading-relaxed px-2">(Haz click en las secciones para saber más)</p>
         </div>
         
         <div className="relative">
