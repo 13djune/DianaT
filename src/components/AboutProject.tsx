@@ -1,7 +1,7 @@
 import React from 'react';
 import { Heart, Users, HandHeart, HeartHandshake } from 'lucide-react';
 // Ajusta la cantidad de "../" dependiendo de en qué carpeta esté este componente
-import abrazoImg from '../../assets/img/abrazo.PNG'; 
+import abrazoImg from '../../assets/img/abrazo.png'; 
 
 const AboutProject: React.FC = () => {
   // 1. EL EQUIPO (FIJOS)
