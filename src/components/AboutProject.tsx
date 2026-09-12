@@ -1,11 +1,9 @@
 import React from 'react';
 import { Heart, Users, HandHeart, HeartHandshake } from 'lucide-react';
-// Ajusta la cantidad de "../" dependiendo de en qué carpeta esté este componente
-import abrazoImg from '../assets/img/abrazo.png'; 
+import abrazoImg from '../assets/img/abrazo.PNG'; 
 
 const AboutProject: React.FC = () => {
   // 1. EL EQUIPO (FIJOS)
-  // He actualizado a Mercedes como fundadora basándome en el texto.
   const coreTeam = [
     { name: "Mercedes Chacón", role: "Diana y Psicóloga", image: null }, 
     { name: "Dra. Ana López", role: "Asesora Oncológica", image: null },
@@ -90,55 +88,6 @@ const AboutProject: React.FC = () => {
             />
           </div>
         </div>
-        
-        {/* SEPARADOR */}
-        {/* <div className="h-px w-full bg-brand-black/10 mb-20"></div> */}
-
-        {/* PARTE 3: Equipo Fijo */}
-        {/* <div className="mb-24">
-          <h3 className="text-3xl font-serif font-bold text-center mb-12 flex items-center justify-center gap-3">
-            <Users className="text-primary" /> El Equipo
-          </h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {coreTeam.map((member, idx) => (
-              <div key={idx} className="text-center group">
-                <div className="w-32 h-32 mx-auto bg-white rounded-full manual-border flex items-center justify-center mb-4 overflow-hidden group-hover:scale-105 transition-transform shadow-md">
-                  {member.image ? (
-                    <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
-                  ) : (
-                    <span className="font-serif text-4xl text-brand-black">{member.name[0]}</span>
-                  )}
-                </div>
-                <h4 className="text-xl font-bold text-brand-black">{member.name}</h4>
-                <p className="text-primary font-bold text-sm uppercase tracking-widest">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div> */}
-
-        {/* PARTE 4: COLABORADORES (Esporádicos) */}
-        {/* <div className="text-center">
-          <h3 className="text-2xl font-serif font-bold mb-8 flex items-center justify-center gap-2">
-            <HandHeart className="text-primary" size={20} /> Colaboradores
-          </h3>
-          <p className="text-brand-black/70 mb-8 italic max-w-2xl mx-auto">
-            Gracias a quienes aportan su granito de arena, su ciencia o su arte de manera puntual para que este barco siga navegando.
-          </p>
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-3">
-            {collaborators.map((collab, idx) => (
-              <a 
-                key={idx} 
-                href={collab.url}
-                target="_blank" 
-                rel="noreferrer noopener" // Seguridad para enlaces externos
-                className="text-lg font-bold text-brand-black/60 hover:text-brand-black transition-colors border-b border-transparent hover:border-primary cursor-pointer"
-              >
-                {collab.name}
-              </a>
-            ))}
-          </div>
-        </div> */}
 
       </div>
     </section>
