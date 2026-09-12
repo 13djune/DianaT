@@ -6,14 +6,6 @@ const ManualQuote: React.FC = () => {
     <section className="py-40 bg-white overflow-hidden">
       <div className="max-w-5xl mx-auto px-6 text-center relative">
         
-        {/* IMAGEN INTEGRADA DECORATIVA: negro absoluto y sin fondo */}
-        <div className="flex justify-center mb-10">
-          <img 
-            src={reirImg} 
-            alt="Reír" 
-            className="w-32 md:w-48 h-auto object-contain brightness-0 mix-blend-multiply opacity-80 -rotate-2"
-          />
-        </div>
 
         <h2 className="text-4xl md:text-6xl font-serif leading-tight relative z-10 text-brand-black">
           Con
@@ -37,6 +29,14 @@ const ManualQuote: React.FC = () => {
         </h2>
         
         <p className="mt-16 text-sm font-bold uppercase tracking-[0.3em] text-brand-black/40">— Mercedes Chacón</p>
+        {/* IMAGEN INTEGRADA DECORATIVA: negro absoluto y sin fondo */}
+        <div className="flex justify-center mb-10">
+          <img 
+            src={reirImg} 
+            alt="Una mujer riendose, quitandose una lágrima del ojo. Al lado, un corazón con una tirita." 
+            className="w-32 md:w-48 h-auto object-contain brightness-0 mix-blend-multiply -rotate-2"
+          />
+        </div>
       </div>
     </section>
   );

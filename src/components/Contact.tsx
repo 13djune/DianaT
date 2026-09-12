@@ -67,11 +67,11 @@ const Contact: React.FC = () => {
             </div>
 
             {/* IMAGEN INTEGRADA DECORATIVA: negro absoluto y sin fondo */}
-            <div className="mt-16 flex justify-start opacity-70">
+            <div className="mt-16 flex justify-start">
               <img 
                 src={manoHombroImg} 
-                alt="Apoyo y cuidado" 
-                className="w-40 md:w-56 h-auto object-contain brightness-0 mix-blend-multiply rotate-3"
+                alt="Una mano sobre el hombro de una mujer, mostrando apoyo y cuidado" 
+                className="w-48 md:w-60 h-auto object-contain brightness-0 rotate-3"
               />
             </div>
           </div>

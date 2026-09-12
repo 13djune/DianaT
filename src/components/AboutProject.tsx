@@ -57,7 +57,7 @@ const AboutProject: React.FC = () => {
 
         </div>
 
-        {/* PARTE 2: LA MISIÓN (Maquetación original conservada) */}
+        {/* PARTE 2: LA MISIÓN */}
         <div className="bg-soft-lilac/40 p-10 md:p-14 rounded-[40px] manual-border editorial-shadow mb-24 relative overflow-hidden">
           <HeartHandshake 
             className="absolute top-4 left-4 md:top-8 md:left-8 text-primary/40 transform -scale-x-100 w-16 h-16 md:w-20 md:h-20" 
@@ -73,30 +73,25 @@ const AboutProject: React.FC = () => {
               Pretendemos acompañar a mujeres con cáncer de mama a través de información clara, experiencia real y comunidad, 
               para ayudar a entender cada fase del proceso, reducir el miedo y el sentimiento de soledad.
             </p>
-            <p className="text-xl font-bold text-brand-black font-serif italic pt-4">
-              Queremos construir un ecosistema de contenido fiable, humano y diferenciado que se convierta en un referente 
-              de acompañamiento informado. Una voz fiable y una comunidad sólida que crece desde la confianza, no desde el ruido.
-            </p>
             
-            {/* IMAGEN INTEGRADA DECORATIVA: negro absoluto y sin fondo */}
-            <div className="flex justify-center pt-8 opacity-80">
-              <img 
-                src={abrazoImg} 
-                alt="Abrazo y comunidad" 
-                className="w-32 md:w-48 h-auto object-contain brightness-0 mix-blend-multiply"
-              />
+            {/* TEXTO A LA IZQUIERDA E IMAGEN A LA DERECHA */}
+            <div className="flex flex-col md:flex-row items-center md:items-start md:text-left gap-8 pt-6">
+              <p className="text-xl font-bold text-brand-black font-serif italic flex-1">
+                Queremos construir un ecosistema de contenido fiable, humano y diferenciado que se convierta en un referente 
+                de acompañamiento informado. Una voz fiable y una comunidad sólida que crece desde la confianza, no desde el ruido.
+              </p>
+              
+              <div className="flex-shrink-0 flex justify-center md:justify-end">
+                <img 
+                  src={abrazoImg} 
+                  alt="Abrazo y comunidad" 
+                  className="w-32 md:w-48 h-auto object-contain brightness-0 mix-blend-multiply"
+                />
+              </div>
             </div>
+
           </div>
         </div>
-
-        {/* SEPARADOR */}
-        {/* <div className="h-px w-full bg-brand-black/10 mb-20"></div> */}
-
-        {/* PARTE 3: Equipo Fijo */}
-        {/* ... */}
-        
-        {/* PARTE 4: COLABORADORES */}
-        {/* ... */}
 
       </div>
     </section>
