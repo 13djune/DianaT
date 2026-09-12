@@ -630,5 +630,164 @@ export const newslettersData = [
         link: "https://es.scribd.com/document/478038890/Margalef-Planeta-Azul-Planeta-Verde"
       }
     ]
+  },
+  {
+    id: "13",
+    tag: "NEWSLETTER 13",
+    title: "¿Y si este verano el mejor plan fuera perderte alguno?",
+    subtitle: "Entre el FOMO y el JOMO",
+    excerpt: "Bienvenido al FOMO (Fear Of Missing Out), ese miedo a creer que todo el mundo tiene el plan perfecto menos tu. En el extremo opuesto esta el JOMO (Joy Of Missing Out), o la alegría de perderse cosas.",
+    isPublished: new Date() >= new Date('2026-08-22T18:00:00+02:00'),
+    intro: (
+      <>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          Entras en Instagram. Imágenes de playas paradisíacas, macroconciertos, las mejores puestas de sol del verano, platos de comida estrellas Michelin o terrazas con vistas increíbles, <strong>te llevan a preguntarte desde casa si te estás perdiendo algo</strong>. Bienvenido al <strong>FOMO</strong> <em>(Fear Of Missing Out)</em>, ese miedo a creer que todo el mundo tiene el plan perfecto menos tu.
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+          En el extremo opuesto esta el <strong>JOMO</strong> (<em>Joy Of Missing Out</em>), o la alegría de perderse cosas.
+        </p>
+      </>
+    ),
+    diana: (
+      <>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          Tengo que confesar que <strong>me volví un poco FOMO</strong> cuando me diagnosticaron este dichoso cáncer. Los planes que veía a mi alrededor <strong>me parecían mucho mejor que el mío</strong>. Mientras yo estaba en el hospital, en casa recuperándome o simplemente intentando averiguar qué demonios me apetecía hacer en cada momento, todo el mundo hacía cosas (publicándolas en Instagram, por supuesto) <strong>mucho más atractivas.</strong>
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          Ese parón obligado cuando el mundo seguía girando, incrementaba mi sensación de <strong>estar perdiéndome “la fiesta del año”</strong>. No es solo perderse una fiesta, es perderse momentos, cancelar planes, cambiar unas vacaciones por un tratamiento…. Ver cómo la vida de los demás parece seguir a toda velocidad <strong>mientras la tuya ha cambiado de ritmo</strong>.
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-8 max-w-2xl mx-auto">
+          Mi algoritmo de Instagram me llevó a otro concepto que <strong>me ayudó a rebajar ese miedo: el JOMO</strong>, esa alegría de perderse algo aceptando que no puedes estar en todo y <strong>disfrutando de esa decisión</strong>. Porque elegir no participar en ciertas actividades para <strong>priorizar el descanso, el bienestar o los intereses personales</strong> también reconforta. Todo es cuestión de <strong>equilibrio</strong>.
+        </p>
+        <p className="text-xl md:text-2xl font-bold text-brand-black text-center mt-12 max-w-2xl mx-auto">
+          ¿Tú eres más de FOMO o de JOMO?
+        </p>
+      </>
+    ),
+    expertos: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        Los expertos señalan que lo saludable <strong>es poder elegir conscientemente cuándo participar y cuándo desconectar</strong>. El FOMO puede impulsarnos a probar cosas nuevas. El JOMO a ser selectivo con los planes y aprender a decir “no” sin culpa. Limitemos el tiempo en redes: <strong>menos comparación y más elección consciente</strong>.
+      </p>
+    ),
+    reflexionando: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        Quizás este verano <strong>perderte algún plan</strong> sea una de las pocas cosas que <strong>no deberías temer</strong>. Porque decir "hoy no puedo" también <strong>es una forma de cuidarse</strong>. Porque el bienestar no siempre está en hacer más, sino en <strong>exigirse menos</strong>. No hace falta coleccionar planes para que sea un buen verano. A veces basta con una partida de parchís, una tarde en familia, una conversación con amigos, una caminata corta o una tarde sin reloj.
+      </p>
+    ),
+    recomendaciones: [
+      {
+        title: "La alegría de perderse cosas",
+        text: "Libro (Koan, 2019).",
+        link: "https://koanlibros.com/libro/la-alegria-de-perderse-cosas"
+      },
+      {
+        title: "JOMO: El gusto de perder",
+        text: "Libro (Juan Evaristo Valls, 2026).",
+        link: "https://www.anagrama-ed.es/libro/nuevos-cuadernos-anagrama/jomo/9788433949707/NCA_108"
+      }
+    ]
+  },
+  {
+    id: "14",
+    tag: "NEWSLETTER 14",
+    title: "Hola de nuevo, bandeja de entrada",
+    subtitle: "El síndrome postvacacional",
+    excerpt: "Entre el 30% y el 40% de los trabajadores en España experimenta los síntomas del síndrome postvacacional al reincorporarse a su puesto de trabajo tras el verano.",
+    isPublished: new Date() >= new Date('2026-09-01T08:00:00+02:00'),
+    intro: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        <strong>Entre el 30% y el 40% de los trabajadores</strong> en España experimenta los <strong>síntomas del síndrome postvacacional</strong> al reincorporarse a su puesto de trabajo tras el verano. Hasta un <strong>60%</strong> admite <strong>sufrir cuadros de estrés</strong>, <strong>fatiga o dificultades de adaptación</strong> durante los primeros días, aunque no desarrollen el síndrome por completo.
+      </p>
+    ),
+    diana: (
+      <>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          <strong>¡Alerta, se acaban las vacaciones!</strong> Esas semanas doradas, donde la única gran decisión diaria es buscar un sitio en el que colocar la toalla en la playa, han llegado a su fin.
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          Ahora estás de vuelta frente a una pantalla que brilla demasiado, con un café recalentado en la mano y 385 correos electrónicos que empiezan por “espero que hayas descansado estas vacaciones. Necesito que….” Abordar la bandeja de entrada es el equivalente actual a abrir la tumba de un faraón: <strong>sabes que hay maldiciones esperándote dentro</strong>. Si notas que tu cerebro funciona a la velocidad de un caracol, tu paciencia roza el cero absoluto y el sonido del despertador te parece una alarma anti incendios, <strong>no estás perdiendo la cabeza. Simplemente has vuelto a la cruda realidad</strong>.
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-8 max-w-2xl mx-auto">
+          Pues ahora imagina que a esta vuelta de vacaciones añadieras la vuelta a la “nueva normalidad” después de haber estado prácticamente un año fuera de juego. Con esos compañeros que te mirarán <strong>como si vieran un fantasma o un jarrón de la dinastía Ming a punto de romperse</strong>. O los que vendrán a darte recomendaciones de pócimas sanadoras, a contarte el caso de su primo o a devolverte todo lo que han estado haciendo en tu lugar. La receta es la misma en todos los casos: regreso gradual, metas a corto plazo y mantener tiempo de ocio. <strong>Piensa que es un proceso transitorio</strong>.
+        </p>
+        <p className="text-xl md:text-2xl font-bold text-brand-black text-center mt-12 max-w-2xl mx-auto">
+          ¿Tienes miedo a volver a la rutina, Diana?
+        </p>
+      </>
+    ),
+    expertos: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        El “<strong>síndrome postvacacional</strong>” no es una enfermedad, sino una <strong>reacción normal de adaptación</strong>. El cerebro rompe el piloto automático durante el descanso, por lo que volver a las obligaciones de golpe <strong>genera apatía, cansancio e irritabilidad pasajera</strong>. Clínicamente se cataloga como un <strong>trastorno adaptativo transitorio</strong>.
+      </p>
+    ),
+    reflexionando: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        Que los médicos te den el alta es <strong>la mejor noticia del mundo</strong>, pero <strong>nadie te advierte de la letra pequeña</strong>: el regreso al trabajo puede llegar a ser un deporte de <strong>riesgo psicológico</strong>. Retomar la rutina laboral cuando tu cuerpo continúa en fase de reconstrucción, es <strong>un choque</strong> que debemos gestionar para no sentirnos tan desorientados como el primer día que llegamos al hospital.
+      </p>
+    ),
+    recomendaciones: [
+      {
+        title: "El descontento",
+        text: "Libro de Beatriz Serrano.",
+        link: "https://www.google.com/search?q=El+descontento+(Beatriz+Serrano)"
+      },
+      {
+        title: "Hazlo con humor",
+        text: "Libro de Jennifer Asker y Naomi Bagdonas.",
+        link: "https://www.google.com/search?q=Hazlo+con+humor+(Jennifer+Asker+y+Naomi+Bagdonas)"
+      }
+    ]
+  },
+  {
+    id: "15",
+    tag: "NEWSLETTER 15",
+    title: "¿Quién dijo AURA?",
+    subtitle: "De lo místico a lo digital",
+    excerpt: "El término aura ha evolucionado de lo místico a lo digital: tradicionalmente describe el halo de energía invisible o la vibración que rodea a una persona, pero hoy en redes sociales se usa para medir el carisma, el estilo y la presencia de alguien.",
+    // Programado para salir mañana 13 de septiembre a las 18:00 (hora peninsular española)
+    isPublished: new Date() >= new Date('2026-09-13T18:00:00+02:00'),
+    intro: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        El término aura ha evolucionado de lo místico a lo digital: tradicionalmente describe el halo de energía invisible o la vibración que rodea a una persona, pero hoy en redes sociales se usa para medir el carisma, el estilo y la presencia de alguien.
+      </p>
+    ),
+    diana: (
+      <>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          ¡Ahora resulta que el AURA se FARMEA! Me sentí una ignorante la primera vez que oí estos dos términos juntos. Farmear viene de los videojuegos y por lo visto significa repetir una acción muchas veces para acumular puntos, recursos o experiencia. Cuando se une con aura se trata de realizar actos, gestos o poses en público para ganar admiración y sumar prestigio social. Pero si cometes una torpeza, tu aura “pierde puntos”. Y así nacen las batallas de aura.
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-6 max-w-2xl mx-auto">
+          Puestos a batallar, guerreras mías, mejor una batalla de aura que una batalla contra el cáncer. El juego consiste en sumar y restar puntos así que intentemos mantener nuestro saldo en positivo. Porque, sin haber hecho nada, de la noche a la mañana bajamos -50.000 puntos cuando empezamos a transitar este camino: entre el diagnóstico, las batas que parecen diseñadas por la misma persona que inventó la máquina de hacer mamografías y los términos raros que empiezas a escuchar, es normal sentir cómo cae nuestro Flow.
+        </p>
+        <p className="text-lg md:text-xl text-brand-black leading-relaxed mb-8 max-w-2xl mx-auto">
+          Pero poner humor a los días grises o simplemente mandar a la m*erda el drama un rato son +100.000 de aura automáticos.
+        </p>
+        <p className="text-xl md:text-2xl font-bold text-brand-black text-center mt-12 max-w-2xl mx-auto">
+          ¿Estás cuidando tu aura, Diana?
+        </p>
+      </>
+    ),
+    expertos: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        Los psicólogos, sociólogos y educadores coinciden en que la tendencia de farmear aura no es algo peligroso ni un trastorno mental, sino la evolución digital de una necesidad humana muy antigua: construir la identidad y buscar la aprobación social durante la juventud. Recomiendan acompañar a los jóvenes para asegurar que su verdadera seguridad venga de su interior y no solo de los "puntos" acumulados en internet.
+      </p>
+    ),
+    reflexionando: (
+      <p className="text-lg md:text-xl text-brand-black leading-relaxed max-w-2xl mx-auto">
+        El cáncer de mama puede intentar meterse con nuestros planes, con nuestro cuerpo y hasta con nuestra paciencia, pero nunca podrá competir con nuestra esencia. Nuestro verdadero flow no depende del diagnóstico, sino de la fuerza con la que decidimos levantarnos cada mañana. Porque nuestra aura no ha bajado; se está recargando para volver con más brillo. Mantener nuestra aura es un superpoder que nos pertenece.
+      </p>
+    ),
+    recomendaciones: [
+      {
+        title: "The Charisma Myth (El mito del carisma)",
+        text: "Libro de Olivia Fox Cabane.",
+        link: "https://www.google.com/search?q=The+Charisma+Myth+Olivia+Fox+Cabane"
+      },
+      {
+        title: "Peaky Blinders (Serie)",
+        text: "Thomas Shelby (Cillian Murphy) es el referente definitivo del argot de internet para medir el aura.",
+        link: "https://www.google.com/search?q=Peaky+Blinders"
+      }
+    ]
   }
 ];
